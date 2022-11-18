@@ -1,0 +1,41 @@
+@use '../abstracts/' as *;
+
+// Light theme
+$light-theme: (
+    page-bg: map-get($mid-blue, '200'),
+    content-bg: $white,
+    content-border: map-get($mid-blue, '300'),
+    content-text: map-get($dark-blue, '600'),
+    content-title: map-get($dark-blue, ''),
+    main-heading: map-get($mid-blue, '700'),
+    sub-heading: map-get($mid-blue, '600'),
+    dark-surface-bg: map-get($mid-blue, ''),
+    darker-surface-bg: map-get($mid-blue, '700'),
+    dark-surface-text: $white,
+    action-panel: $white,
+    primary: map-get($green, ''),
+    primary-active: map-get($green, '700'),
+    primary-text: $white,
+    error: map-get($red, '500'),
+);
+
+// Dark Theme
+$dark-theme: (
+    page-bg: map-get($slate, '900'),
+    content-bg: map-get($slate, '800'),
+    content-border: map-get($slate, '700'),
+    content-text: map-get($slate, '400'),
+    content-title: map-get($slate, '300'),
+    main-heading: map-get($slate, '200'),
+    sub-heading: map-get($slate, '400'),
+    dark-surface-bg: darken(map-get($slate, '900'), 5%),
+    darker-surface-bg: darken(map-get($slate, '700'), 15%),
+    dark-surface-text: map-get($slate, '300'),
+    action-panel: map-get($slate, '700'),
+    primary: map-get($light-blue, ''),
+    primary-active: map-get($light-blue, '700'),
+    primary-text: map-get($slate, '100'),
+    error: map-get($red, '600'),
+);
+
+// $active-theme: $light-theme;

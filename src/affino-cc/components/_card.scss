@@ -1,0 +1,63 @@
+@use 'sass:math';
+@use 'variables' as *;
+@use '../abstracts/' as *;
+@use '../theme/' as *;
+@use 'buttons' as *;
+
+body {
+    background-color: var(--page-bg-color);
+}
+
+button {
+    @include btn();
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    &:hover {
+        background-color: var(--primary-active-color);
+    }
+}
+
+h2 {
+    color: var(--main-heading-color);
+}
+
+.card {
+    display: block;
+    padding: $base-padding * 2;
+    border: $base-border-thickness * 2 solid var(--content-border-color);
+    box-shadow: $base-box-shadow;
+    border-radius: math.div($base-border-radius, 2);
+    background-color: var(--content-bg-color);
+
+    .card-title {
+        font-size: $font-size-lg;
+        padding-bottom: $base-padding;
+        font-weight: 700;
+        color: var(--content-title-color);
+    }
+    .card-body {
+        font-size: $base-font-size;
+        color: var(--content-text-color);
+
+        a {
+            text-decoration: underline;
+            font-weight: 500;
+            color: var(--primary-color);
+
+            &:hover {
+                color: var(--primary-active-color);
+            }
+        }
+    }
+}
+
+.cc__card {
+    @extend %p-2, %bg-mid-blue, %text-white;
+    @include md {
+        @extend %p-3-md, %bg-aqua-md;
+    }
+}
+
+// .cc__card {
+//     @apply bg-white dark:bg-slate-800 shadow rounded-lg mb-6 md:mb-10 overflow-hidden;
+// }

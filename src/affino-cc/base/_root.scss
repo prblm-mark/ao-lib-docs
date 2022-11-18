@@ -1,0 +1,22 @@
+@use '../theme/theme' as *;
+
+:root {
+    @each $prop, $value in $light-theme {
+        --#{$prop}-color: #{$value};
+    }
+}
+.dark-mode {
+    @each $prop, $value in $dark-theme {
+        --#{$prop}-color: #{$value};
+    }
+}
+
+// This is handled by JS function
+
+// @media (prefers-color-scheme: dark) {
+//     :root {
+//         @each $prop, $value in $dark-theme {
+//             --clr-#{$prop}: #{$value};
+//         }
+//     }
+// }

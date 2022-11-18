@@ -1,0 +1,60 @@
+@use './abstracts/' as *;
+@use 'variables' as *;
+
+$myUtils: (
+    'width': (
+        'prefix': 'w',
+        'values': (
+            '0': 0,
+            '1': $base-width,
+            '2': $base-width * 2,
+            '3': $base-width * 4,
+            '4': $base-width * 10,
+            '5': $base-width * 20,
+        ),
+    ),
+    'padding': (
+        'prefix': 'p',
+        'values': (
+            '0': 0,
+            '1': $base-padding,
+            '2': $base-padding * 2,
+            '3': $base-padding * 4,
+            '4': $base-padding * 6,
+            '5': $base-padding * 8,
+        ),
+    ),
+);
+
+// generate utility classes
+@mixin generateUtilities($screen) {
+    @each $property, $map in $myUtils {
+        $prefix: map-get($map, 'prefix');
+        $values: map-get($map, 'values');
+
+        @each $key, $val in $values {
+            @if ($screen != xs) {
+                .#{$prefix}-#{$key}-#{$screen} {
+                    #{$property}: $val;
+                }
+                %#{$prefix}-#{$key}-#{$screen} {
+                    #{$property}: $val;
+                }
+            } @else {
+                .#{$prefix}-#{$key} {
+                    #{$property}: $val;
+                }
+                %#{$prefix}-#{$key} {
+                    #{$property}: $val;
+                }
+            }
+        }
+    }
+}
+
+// Loop through all breakpoints
+@each $screen, $size in $breakpoints {
+    @media (min-width: #{$size}) {
+        @include generateUtilities($screen);
+    }
+}
