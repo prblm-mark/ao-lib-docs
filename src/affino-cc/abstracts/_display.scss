@@ -1,0 +1,70 @@
+$display-utils: (
+    'display': (
+        'prefix': none,
+        'variants': (
+            'hidden': none,
+            'block': block,
+            'flex': flex,
+            'inline-block': inline-block,
+            'inline-flex': inline-flex,
+            'inline': inline,
+            'grid': grid,
+        ),
+    ),
+    'justify-content': (
+        'prefix': 'justify',
+        'variants': (
+            'start': flex-start,
+            'end': flex-end,
+            'center': center,
+            'between': space-between,
+            'around': space-around,
+            'evenly': space-evenly,
+        ),
+    ),
+    'align-items': (
+        'prefix': 'items',
+        'variants': (
+            'start': flex-start,
+            'end': flex-end,
+            'center': center,
+            'baseline': baseline,
+            'stretch': stretch,
+        ),
+    ),
+    'align-content': (
+        'prefix': 'content',
+        'variants': (
+            'start': flex-start,
+            'end': flex-end,
+            'center': center,
+            'baseline': baseline,
+            'stretch': stretch,
+        ),
+    ),
+    'flex-wrap': (
+        'prefix': 'flex',
+        'variants': (
+            'wrap': wrap,
+            'no-wrap': no-wrap,
+        ),
+    ),
+);
+
+// Get display variant & prop
+@function getDisplayVariants($util, $prop) {
+    $map: map-get($display-utils, $util);
+    $variants: map-get($map, 'variants');
+    @return map-get($variants, $prop);
+}
+
+// Display mixins
+@mixin display($prop: 'block') {
+    display: getDisplayVariants('display', $prop);
+}
+@mixin justify($prop: 'start') {
+    justify-content: getDisplayVariants('justify-content', $prop);
+}
+@mixin items($prop: 'center') {
+    align-items: getDisplayVariants('align-items', $prop);
+}

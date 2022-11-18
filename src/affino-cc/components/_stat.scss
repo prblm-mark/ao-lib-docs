@@ -1,0 +1,20 @@
+@use 'sass:math';
+@use '../abstracts/' as *;
+@use '../theme/' as *;
+
+.stat {
+    @include display('flex');
+    @include items('center');
+
+    .stat-icon {
+        background-color: var(--primary-color);
+        fill: var(--primary-text-color);
+        @include h('2xl');
+        @include w('2xl');
+        @include rounded();
+        @include display('flex');
+        @include justify('center');
+        @include items('center');
+        @include mr('16');
+    }
+}

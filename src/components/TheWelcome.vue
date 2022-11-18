@@ -26,7 +26,7 @@ import SupportIcon from "./icons/IconSupport.vue";
       <ToolingIcon />
     </template>
     <template #heading>Tooling</template>
-
+    <span class="test">This is some text</span>
     This project is served and bundled with
     <a
       href="https://vitejs.dev/guide/features.html"

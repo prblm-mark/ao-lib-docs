@@ -1,0 +1,102 @@
+@use './spacing' as *;
+@use './colors' as *;
+@use 'sass:map';
+
+$border-widths: (
+    '0': 0,
+    '1': 1px,
+    '2': 2px,
+    '3': 3px,
+    '4': 4px,
+);
+
+$border-variants: (
+    't': top,
+    'r': right,
+    'b': bottom,
+    'l': left,
+);
+
+$border-styles: (
+    'none': none,
+    'solid': solid,
+    'dotted': dotted,
+    'dashed': dashed,
+);
+
+$border-radius: (
+    'none': 0,
+    '': $base-spacing-size * 0.25,
+    'xs': $base-spacing-size * 0.125,
+    'sm': $base-spacing-size * 0.25,
+    'md': $base-spacing-size * 0.375,
+    'lg': $base-spacing-size * 0.5,
+    'xl': $base-spacing-size * 0.75,
+    '2xl': $base-spacing-size,
+    '3xl': $base-spacing-size + 0.125,
+    'full': 9999px,
+);
+
+// Border width Mixins
+@mixin border($width: '1') {
+    border-width: map-get($border-widths, $width);
+}
+
+@mixin border-l($width: '1') {
+    border-width: 0;
+    border-left-width: map-get($border-widths, $width) !important;
+}
+
+@mixin border-r($width: '1') {
+    border-width: 0;
+    border-right-width: map-get($border-widths, $width) !important;
+}
+
+@mixin border-t($width: '1') {
+    border-width: 0;
+    border-top-width: map-get($border-widths, $width) !important;
+}
+
+@mixin border-b($width: '1') {
+    border-width: 0;
+    border-bottom-width: map-get($border-widths, $width) !important;
+}
+
+// Border style Mixin
+@mixin border-style($style: 'solid') {
+    border-style: map-get($border-styles, $style);
+}
+@mixin border-style-r($style: 'solid') {
+    border-right-style: map-get($border-styles, $style);
+}
+@mixin border-style-l($style: 'solid') {
+    border-left-style: map-get($border-styles, $style);
+}
+@mixin border-style-t($style: 'solid') {
+    border-top-style: map-get($border-styles, $style);
+}
+@mixin border-style-b($style: 'solid') {
+    border-bottom-style: map-get($border-styles, $style);
+}
+
+// Border radius Mixin
+@mixin rounded($radius: '') {
+    border-radius: map-get($border-radius, $radius);
+}
+
+// Border Color mixin
+@mixin border-color($color, $weight: 700) {
+    border-color: getColor($color, $weight);
+}
+@mixin border-color-r($color, $weight: 700) {
+    border-right-color: getColor($color, $weight);
+}
+@mixin border-color-l($color, $weight: 700) {
+    border-left-color: getColor($color, $weight);
+}
+@mixin border-color-t($color, $weight: 700) {
+    border-top-color: getColor($color, $weight);
+}
+@mixin border-color-b($color, $weight: 700) {
+    border-bottom-color: getColor($color, $weight);
+}

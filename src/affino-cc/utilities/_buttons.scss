@@ -1,0 +1,105 @@
+@use 'sass:math';
+@use '../abstracts/' as *;
+@use '../components/' as *;
+
+.btn-primary {
+    @include btn(var(--primary-color));
+    color: var(--primary-text-color);
+    &:hover,
+    &:focus {
+        background-color: var(--primary-active-color);
+    }
+}
+.btn-secondary {
+    @include btn(transparent);
+    color: var(--secondary-text-color);
+    box-shadow: inset 0 0 0 1px var(--secondary-color);
+    &:hover,
+    &:focus {
+        color: var(--content-bg-color);
+        background-color: var(--secondary-color);
+    }
+}
+.btn-small {
+    @include btn-sm();
+}
+
+// Loop through all breakpoints
+@each $screen-size, $breakpoint in $breakpoints {
+    // Loop through all colors and their maps
+    @each $color, $color-map in $colors {
+        // Loop through each color map
+        @each $prop, $value in $color-map {
+            // If screen size xs dont add screen size postfix
+            @if ($screen-size == 'xs') {
+                // Check if color-map is a map
+                // If not do not add prop
+                @if (is-map($color-map)) {
+                    .btn-#{$color}-#{$prop} {
+                        @include btn($value);
+                        &:hover,
+                        &:focus {
+                            background-color: darken($value, 5);
+                        }
+                    }
+                    .btn-outline-#{$color}-#{$prop} {
+                        @include btn($transparent);
+                        box-shadow: inset 0 0 0 2px $value;
+                        &:hover {
+                            background-color: $value;
+                        }
+                    }
+                } @else {
+                    .btn-#{$color} {
+                        @include btn($color-map);
+                    }
+                    .btn-outline-#{$color} {
+                        color: $color-map;
+                        @include btn($transparent);
+                        box-shadow: inset 0 0 0 2px $color-map;
+
+                        &:hover {
+                            background-color: $color-map;
+                        }
+                    }
+                }
+            } @else {
+                // Check if color-map is a map
+                // If not do not add prop
+                @if (is-map($color-map)) {
+                    @media (min-width: #{$breakpoint}) {
+                        .btn-#{$color}-#{$prop}\@#{$screen-size} {
+                            @include btn($value);
+                            &:hover,
+                            &:focus {
+                                background-color: darken($value, 5);
+                            }
+                        }
+                        .btn-outline-#{$color}-#{$prop}\@#{$screen-size} {
+                            @include btn($transparent);
+                            box-shadow: inset 0 0 0 2px $value;
+                            &:hover {
+                                background-color: $value;
+                            }
+                        }
+                    }
+                } @else {
+                    @media (min-width: #{$breakpoint}) {
+                        .btn-#{$color}\@#{$screen-size} {
+                            @include btn($color-map);
+                        }
+                        .btn-outline-#{$color}\@#{$screen-size} {
+                            color: $color-map;
+                            @include btn($transparent);
+                            box-shadow: inset 0 0 0 2px $color-map;
+
+                            &:hover {
+                                background-color: $color-map;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

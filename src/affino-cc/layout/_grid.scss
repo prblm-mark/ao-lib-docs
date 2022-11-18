@@ -1,0 +1,26 @@
+@use 'sass:math';
+@use '../abstracts' as *;
+
+$grid-columns: 12;
+$grow: 0;
+
+// base layout classes
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@mixin grid-column($width) {
+    flex-grow: $grow;
+    width: $width;
+}
+@mixin col($number) {
+    width: math.div($number * 100%, $grid-columns);
+}

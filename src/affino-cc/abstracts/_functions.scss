@@ -1,4 +1,4 @@
-// Get color from color map
-@function get-color($map, $key) {
-    @return map-get($map, $key);
+// Check if map
+@function is-map($var) {
+    @return type-of($var) == 'map';
 }

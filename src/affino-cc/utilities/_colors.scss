@@ -1,0 +1,73 @@
+@use '../abstracts/' as *;
+@use 'sass:map';
+
+// Loop through all breakpoints
+@each $screen-size, $breakpoint in $breakpoints {
+    // Loop through all colors and their maps
+    @each $color, $color-map in $colors {
+        // Loop through each color map
+        @each $prop, $value in $color-map {
+            // If screen size xs dont add screen size postfix
+            @if ($screen-size == 'xs') {
+                // Check if color-map is a map
+                // If not do not add prop
+                @if (is-map($color-map)) {
+                    .text-#{$color}-#{$prop} {
+                        color: $value;
+                    }
+                    .text-#{$color}-#{$prop}-hover {
+                        &:hover {
+                            color: $value;
+                        }
+                    }
+                    .bg-#{$color}-#{$prop} {
+                        background-color: $value;
+                    }
+                } @else {
+                    .text-#{$color} {
+                        color: $color-map;
+                    }
+                    .text-#{$color}-hover {
+                        &:hover {
+                            color: $color-map;
+                        }
+                    }
+                    .bg-#{$color} {
+                        background-color: $color-map;
+                    }
+                }
+            }
+
+            // If screen size != xs add screen size postfix
+            @else {
+                @media (min-width: #{$breakpoint}) {
+                    @if (is-map($color-map)) {
+                        .text-#{$color}-#{$prop}\@#{$screen-size} {
+                            color: $value;
+                        }
+                        .text-#{$color}-#{$prop}-hover\@#{$screen-size} {
+                            &:hover {
+                                color: $value;
+                            }
+                        }
+                        .bg-#{$color}-#{$prop}\@#{$screen-size} {
+                            background-color: $value;
+                        }
+                    } @else {
+                        .text-#{$color}\@#{$screen-size} {
+                            color: $color-map;
+                        }
+                        .text-#{$color}-hover\@#{$screen-size} {
+                            &:hover {
+                                color: $color-map;
+                            }
+                        }
+                        .bg-#{$color}\@#{$screen-size} {
+                            background-color: $color-map;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@use '../abstracts/' as *;
+@use 'sass:map';
+
+// Loop through all breakpoints
+@each $screen-size, $breakpoint in $breakpoints {
+    // Loop though all display utils
+    @each $prop, $map in $display-utils {
+        $prefix: map-get($map, 'prefix');
+        $variants: map-get($map, 'variants');
+
+        @each $variant, $value in $variants {
+            @if ($screen-size == 'xs') {
+                @if ($prefix == none) {
+                    .#{$variant} {
+                        #{$prop}: $value;
+                    }
+                } @else {
+                    .#{$prefix}-#{$variant} {
+                        #{$prop}: $value;
+                    }
+                }
+            } @else {
+                @media (min-width: #{$breakpoint}) {
+                    @if ($prefix == none) {
+                        .#{$variant}\@#{$screen-size} {
+                            #{$prop}: $value;
+                        }
+                    } @else {
+                        .#{$prefix}-#{$variant}\@#{$screen-size} {
+                            #{$prop}: $value;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

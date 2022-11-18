@@ -1,0 +1,57 @@
+@use '../abstracts/' as *;
+@use 'sass:string';
+
+// Loop through all breakpoints
+@each $screen-size, $breakpoint in $breakpoints {
+    // Loop through spacing sizes (sm, md etc...)
+    @each $size, $value in $spacing-sizes {
+        // Loop through properties to create classes
+        // i.e padding and prefix i.e 'p'
+        @each $prefix, $prop in $spacing-props {
+            // For x/y margin & padding multiple rules need to be applied
+            @if (string.index($prefix, 'x')) {
+                @each $rule in $prop {
+                    @if ($screen-size == 'xs') {
+                        .#{$prefix}-#{$size} {
+                            #{$rule}: $value;
+                        }
+                    } @else {
+                        @media (min-width: #{$breakpoint}) {
+                            .#{$prefix}-#{$size}\@#{$screen-size} {
+                                #{$rule}: $value;
+                            }
+                        }
+                    }
+                }
+            } @else if (string.index($prefix, 'y')) {
+                @each $rule in $prop {
+                    @if ($screen-size == 'xs') {
+                        .#{$prefix}-#{$size} {
+                            #{$rule}: $value;
+                        }
+                    } @else {
+                        @media (min-width: #{$breakpoint}) {
+                            .#{$prefix}-#{$size}\@#{$screen-size} {
+                                #{$rule}: $value;
+                            }
+                        }
+                    }
+                }
+            }
+            // All other properties applied here
+            @else {
+                @if ($screen-size == 'xs') {
+                    .#{$prefix}-#{$size} {
+                        #{$prop}: $value;
+                    }
+                } @else {
+                    @media (min-width: #{$breakpoint}) {
+                        .#{$prefix}-#{$size}\@#{$screen-size} {
+                            #{$prop}: $value;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

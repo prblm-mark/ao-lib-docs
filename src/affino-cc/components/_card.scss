@@ -1,48 +1,33 @@
 @use 'sass:math';
-@use 'variables' as *;
 @use '../abstracts/' as *;
 @use '../theme/' as *;
-@use 'buttons' as *;
-
-body {
-    background-color: var(--page-bg-color);
-}
-
-button {
-    @include btn();
-    background-color: var(--primary-color);
-    color: var(--primary-text-color);
-    &:hover {
-        background-color: var(--primary-active-color);
-    }
-}
-
-h2 {
-    color: var(--main-heading-color);
-}
 
 .card {
-    display: block;
-    padding: $base-padding * 2;
-    border: $base-border-thickness * 2 solid var(--content-border-color);
-    box-shadow: $base-box-shadow;
-    border-radius: math.div($base-border-radius, 2);
     background-color: var(--content-bg-color);
+    @include display('block');
+    @include p('16');
+    @include shadow('md');
+    @include rounded('md');
+    @include border();
+    @include border-style('solid');
+    @include border-color(var(--content-border-color));
+
+    @include lg {
+        @include rounded('lg');
+    }
 
     .card-title {
-        font-size: $font-size-lg;
-        padding-bottom: $base-padding;
-        font-weight: 700;
         color: var(--content-title-color);
+        @include fs('2xl');
+        @include fw('700');
+        @include mb('xs');
     }
     .card-body {
-        font-size: $base-font-size;
         color: var(--content-text-color);
-
+        @include mb('md');
         a {
-            text-decoration: underline;
-            font-weight: 500;
             color: var(--primary-color);
+            text-decoration: underline;
 
             &:hover {
                 color: var(--primary-active-color);
@@ -51,13 +36,25 @@ h2 {
     }
 }
 
-.cc__card {
-    @extend %p-2, %bg-mid-blue, %text-white;
-    @include md {
-        @extend %p-3-md, %bg-aqua-md;
+// Extension of card, but could be in own component
+
+.user {
+    @include display('flex');
+    @include items('center');
+
+    img {
+        @include w('20');
+        @include h('20');
+        @include rounded('full');
+        @include mr('14');
+        @include object('cover');
+        @include lg {
+            @include w('44');
+            @include h('44');
+        }
+    }
+
+    h4 {
+        @include mb('4');
     }
 }
-
-// .cc__card {
-//     @apply bg-white dark:bg-slate-800 shadow rounded-lg mb-6 md:mb-10 overflow-hidden;
-// }

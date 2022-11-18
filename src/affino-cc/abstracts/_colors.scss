@@ -1,64 +1,89 @@
 @use 'sass:map';
+@use './functions' as *;
 
-$dark-blue: (
-    '100': #f2f4f5,
-    '200': #e5e9eb,
-    '300': #ccd4d8,
-    '400': #99aab1,
-    '500': #667f89,
-    '600': #335562,
-    '700': #00222f,
-    '800': #001923,
-    '': #002a3b,
-);
-$mid-blue: (
-    '100': #f3f6f7,
-    '200': #e7edf0,
-    '300': #d0dbe1,
-    '400': #a1b7c3,
-    '500': #7192a4,
-    '600': #426e86,
-    '700': #0f3b53,
-    '800': #0b2c3e,
-    '': #134a68,
-);
-$light-blue: (
-    '600': #33bfcb,
-    '700': #008c98,
-    '': #00afbe,
-);
-$teal: (
-    '600': #3391a4,
-    '700': #005e71,
-    '': #00758d,
-);
-$aqua: (
-    '600': #33b1a8,
-    '700': #007e75,
-    '': #009d92,
-);
-$green: (
-    '600': #4eb78f,
-    '700': #1b845c,
-    '': #22a573,
-);
-$red: (
-    '300': #fca5a5,
-    '400': #f87171,
-    '500': #ef4444,
-    '600': #dc2626,
-    '700': #b91c1c,
-);
-$slate: (
-    '100': #f1f5f9,
-    '200': #e2e8f0,
-    '300': #cbd5e1,
-    '400': #94a3b8,
-    '500': #64748b,
-    '600': #475569,
-    '700': #334155,
-    '800': #1e293b,
-    '900': #0f172a,
+$colors: (
+    'dark-blue': (
+        100: #f2f4f5,
+        200: #e5e9eb,
+        300: #ccd4d8,
+        400: #99aab1,
+        500: #667f89,
+        600: #335562,
+        700: #002a3b,
+        800: #00222f,
+        900: #001923,
+    ),
+    'mid-blue': (
+        100: #f3f6f7,
+        200: #e7edf0,
+        300: #d0dbe1,
+        400: #a1b7c3,
+        500: #7192a4,
+        600: #426e86,
+        700: #134a68,
+        800: #0f3b53,
+        900: #0b2c3e,
+    ),
+    'light-blue': (
+        600: #33bfcb,
+        700: #00afbe,
+        800: #008c98,
+    ),
+    'teal': (
+        600: #3391a4,
+        700: #00758d,
+        800: #005e71,
+    ),
+    'aqua': (
+        600: #33b1a8,
+        700: #009d92,
+        800: #007e75,
+    ),
+    'green': (
+        600: #4eb78f,
+        700: #22a573,
+        800: #1b845c,
+    ),
+    'red': (
+        300: #fca5a5,
+        400: #f87171,
+        500: #ef4444,
+        600: #dc2626,
+        700: #b91c1c,
+    ),
+    'slate': (
+        100: #f1f5f9,
+        200: #e2e8f0,
+        300: #cbd5e1,
+        400: #94a3b8,
+        500: #64748b,
+        600: #475569,
+        700: #334155,
+        800: #1e293b,
+        900: #0f172a,
+    ),
+    'transparent': transparent,
+    'white': white,
 );
 $white: #ffffff;
 $transparent: transparent;
+
+// Get color from color map
+@function getColor($color, $weight: 700) {
+    $color-map: map-get($colors, $color);
+    @if (is-map($color-map)) {
+        @return map-get($color-map, $weight);
+    } @else {
+        @return $color;
+    }
+}
+
+// Color mixin
+@mixin text($color, $weight: 700) {
+    color: getColor($color, $weight);
+}
+
+// Bg Color Mixin
+@mixin bg($color, $weight: 700) {
+    background-color: getColor($color, $weight);
+}

@@ -1,0 +1,121 @@
+@use '../abstracts/' as *;
+
+.heading-border {
+    @include mb('md');
+    @include pb('12');
+    @include border-b();
+    @include border-style();
+    border-color: var(--content-border-color);
+}
+
+@each $screen-size, $breakpoint in $breakpoints {
+    /* -------------------------------------------------------------------------- */
+    /*                        Loop through border variants                        */
+    /* -------------------------------------------------------------------------- */
+    @each $variant, $val in $border-variants {
+        /* ------------------- Create border-width variant classes ------------------ */
+        @each $width, $value in $border-widths {
+            @if ($screen-size == 'xs') {
+                .border-#{$variant}-#{$width} {
+                    border-#{$val}-width: $value;
+                }
+            } @else {
+                @media (min-width: #{$breakpoint}) {
+                    .border-#{$variant}-#{$width}\@#{$screen-size} {
+                        border-#{$val}-width: $value;
+                    }
+                }
+            }
+        }
+
+        /* ------------------- Create border-style variant classes ------------------ */
+        @each $style, $value in $border-styles {
+            @if ($screen-size == 'xs') {
+                .border-style-#{$variant}-#{$style} {
+                    border-#{$val}-style: $value;
+                }
+            } @else {
+                @media (min-width: #{$breakpoint}) {
+                    .border-style-#{$variant}-#{$style}\@#{$screen-size} {
+                        border-#{$val}-style: $value;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ----------------------- Create border-width classes ---------------------- */
+    @each $width, $value in $border-widths {
+        @if ($screen-size == 'xs') {
+            .border-#{$width} {
+                border-width: $value;
+            }
+        } @else {
+            @media (min-width: #{$breakpoint}) {
+                .border-#{$width}\@#{$screen-size} {
+                    border-width: $value;
+                }
+            }
+        }
+    }
+
+    /* ----------------------- Create Border Style classes ---------------------- */
+    @each $style, $value in $border-styles {
+        @if ($screen-size == 'xs') {
+            .border-style-#{$style} {
+                border-style: $value;
+            }
+        } @else {
+            @media (min-width: #{$breakpoint}) {
+                .border-style-#{$style}\@#{$screen-size} {
+                    border-style: $value;
+                }
+            }
+        }
+    }
+
+    /* ---------------------- Create Border Radius classes ---------------------- */
+    @each $radius, $value in $border-radius {
+        @if ($screen-size == 'xs') {
+            .rounded-#{$radius} {
+                border-radius: $value;
+            }
+        } @else {
+            @media (min-width: #{$breakpoint}) {
+                .rounded-#{$radius}\@#{$screen-size} {
+                    border-radius: $value;
+                }
+            }
+        }
+    }
+
+    /* ---------------------- Create Border Colour classes ---------------------- */
+    // Create variant claases too?
+    @each $color, $color-map in $colors {
+        @each $prop, $value in $color-map {
+            @if ($screen-size == 'xs') {
+                @if (is-map($color-map)) {
+                    .border-color-#{$color}-#{$prop} {
+                        border-color: $value;
+                    }
+                } @else {
+                    .border-color-#{$color} {
+                        border-color: $color-map;
+                    }
+                }
+            } @else {
+                @media (min-width: #{$breakpoint}) {
+                    @if (is-map($color-map)) {
+                        .border-color-#{$color}-#{$prop}\@#{$screen-size} {
+                            border-color: $value;
+                        }
+                    } @else {
+                        .border-color-#{$color}\@#{$screen-size} {
+                            border-color: $color-map;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,0 @@
-@function buttonTextColor($color) {
-    $complement: complement($color);
-    $lightComplement: lighten($complement, 70);
-    @return $lightComplement;
-}

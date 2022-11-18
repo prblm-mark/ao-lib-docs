@@ -1,0 +1,149 @@
+@use 'sass:math';
+
+$base-spacing-size: 1rem;
+$spacing-sizes: (
+    '0': 0,
+    'px': 1px,
+    '2': $base-spacing-size * 0.125,
+    '4': $base-spacing-size * 0.25,
+    '6': $base-spacing-size * 0.375,
+    '8': $base-spacing-size * 0.5,
+    '10': $base-spacing-size * 0.625,
+    '12': $base-spacing-size * 0.75,
+    '14': $base-spacing-size * 0.875,
+    '16': $base-spacing-size,
+    '18': $base-spacing-size + 0.125,
+    '20': $base-spacing-size + 0.25,
+    '32': $base-spacing-size * 2,
+    '36': $base-spacing-size + 1.25,
+    '40': $base-spacing-size + 1.5,
+    '44': $base-spacing-size + 1.75,
+    'xxs': math.div($base-spacing-size, 4),
+    'xs': math.div($base-spacing-size, 2),
+    'sm': $base-spacing-size,
+    'md': $base-spacing-size * 1.5,
+    'lg': $base-spacing-size * 2,
+    'xl': $base-spacing-size * 3,
+    '2xl': $base-spacing-size * 4,
+    '3xl': $base-spacing-size * 5,
+    '4xl': $base-spacing-size * 6,
+    'vh': 100vh,
+    'vw': 100vw,
+    'full': 100%,
+);
+
+$spacing-props: (
+    'p': padding,
+    'pl': padding-left,
+    'pr': padding-right,
+    'pb': padding-bottom,
+    'pt': padding-top,
+    'py': (
+        padding-top,
+        padding-bottom,
+    ),
+    'px': (
+        padding-left,
+        padding-right,
+    ),
+    'm': margin,
+    'ml': margin-left,
+    'mr': margin-right,
+    'mb': margin-bottom,
+    'mt': margin-top,
+    'my': (
+        margin-top,
+        margin-bottom,
+    ),
+    'mx': (
+        margin-left,
+        margin-right,
+    ),
+    'w': width,
+    'max-w': max-width,
+    'min-w': min-width,
+    'h': height,
+    'max-h': max-height,
+    'min-h': min-height,
+);
+
+// Get size from spacing-sizes map
+@function getSize($size) {
+    @return map-get($spacing-sizes, $size);
+}
+
+// Padding
+
+@mixin p($size) {
+    padding: getSize($size);
+}
+@mixin pl($size) {
+    padding-left: getSize($size);
+}
+@mixin pr($size) {
+    padding-right: getSize($size);
+}
+@mixin pt($size) {
+    padding-top: getSize($size);
+}
+@mixin pb($size) {
+    padding-bottom: getSize($size);
+}
+@mixin px($size) {
+    padding-left: getSize($size);
+    padding-right: getSize($size);
+}
+@mixin py($size) {
+    padding-top: getSize($size);
+    padding-bottom: getSize($size);
+}
+
+// Margin
+
+@mixin m($size) {
+    margin: getSize($size);
+}
+@mixin ml($size) {
+    margin-left: getSize($size);
+}
+@mixin mr($size) {
+    margin-right: getSize($size);
+}
+@mixin mt($size) {
+    margin-top: getSize($size);
+}
+@mixin mb($size) {
+    margin-bottom: getSize($size);
+}
+@mixin mx($size) {
+    margin-left: getSize($size);
+    margin-right: getSize($size);
+}
+@mixin my($size) {
+    margin-top: getSize($size);
+    margin-bottom: getSize($size);
+}
+
+// Width
+
+@mixin w($size) {
+    width: getSize($size);
+}
+@mixin max-w($size) {
+    max-width: getSize($size);
+}
+@mixin min-w($size) {
+    min-width: getSize($size);
+}
+
+// Height
+
+@mixin h($size) {
+    height: getSize($size);
+}
+@mixin max-h($size) {
+    max-height: getSize($size);
+}
+@mixin min-h($size) {
+    min-height: getSize($size);
+}

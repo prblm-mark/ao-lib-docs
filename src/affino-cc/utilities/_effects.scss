@@ -1,0 +1,35 @@
+@use '../abstracts/' as *;
+
+@each $screen-size, $breakpoint in $breakpoints {
+    // Loop though all type utils
+    @each $prop, $map in $effect-utils {
+        $prefix: map-get($map, 'prefix');
+        $variants: map-get($map, 'variants');
+
+        @each $variant, $value in $variants {
+            @if ($screen-size == 'xs') {
+                @if ($prefix == none) {
+                    .#{$variant} {
+                        #{$prop}: $value;
+                    }
+                } @else {
+                    .#{$prefix}-#{$variant} {
+                        #{$prop}: $value;
+                    }
+                }
+            } @else {
+                @media (min-width: #{$breakpoint}) {
+                    @if ($prefix == none) {
+                        .#{$variant}\@#{$screen-size} {
+                            #{$prop}: $value;
+                        }
+                    } @else {
+                        .#{$prefix}-#{$variant}\@#{$screen-size} {
+                            #{$prop}: $value;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
