@@ -13,7 +13,11 @@ body {
     background-color: var(--page-bg-color);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    @include fs;
+    @include fs('md');
+
+    @include lg {
+        @include fs;
+    }
 }
 
 h1,
@@ -33,32 +37,56 @@ h6 {
 
 h1,
 .h1 {
-    @include fs('3xl');
+    @include fs('2xl');
     @include fw('800');
+
+    @include lg {
+        @include fs('3xl');
+    }
 }
 
 h2,
 .h2 {
-    @include fs('2xl');
+    @include fs('xl');
+
+    @include lg {
+        @include fs('2xl');
+    }
 }
 h3,
 .h3 {
-    @include fs('xl');
+    @include fs('lg');
+
+    @include lg {
+        @include fs('xl');
+    }
 }
 
 h4,
 .h4 {
-    @include fs('lg');
+    @include fs('base');
+
+    @include lg {
+        @include fs('lg');
+    }
 }
 
 h5,
 .h5 {
-    @include fs('base');
+    @include fs('sm');
+
+    @include lg {
+        @include fs('base');
+    }
 }
 
 h6,
 .h6 {
     @include fs('sm');
+
+    @include lg {
+        @include fs('sm');
+    }
 }
 
 strong {
@@ -78,13 +106,25 @@ a {
 }
 
 .txt-md {
-    @include fs('md');
+    @include fs('xs');
+
+    @include lg {
+        @include fs('sm');
+    }
 }
 
 .txt-sm {
-    @include fs('sm');
+    @include fs('xxs');
+
+    @include lg {
+        @include fs('xs');
+    }
 }
 
 .txt-xs {
-    @include fs('xs');
+    @include fs('xxxs');
+
+    @include lg {
+        @include fs('xxs');
+    }
 }
