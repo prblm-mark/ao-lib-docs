@@ -14,7 +14,11 @@ $spacing-sizes: (
     '16': $base-spacing-size,
     '18': $base-spacing-size + 0.125,
     '20': $base-spacing-size + 0.25,
+    '24': $base-spacing-size + 0.5,
+    '28': $base-spacing-size + 0.75,
+    '30': $base-spacing-size + 0.875,
     '32': $base-spacing-size * 2,
+    '34': $base-spacing-size * 2.125,
     '36': $base-spacing-size + 1.25,
     '40': $base-spacing-size + 1.5,
     '44': $base-spacing-size + 1.75,
@@ -30,6 +34,7 @@ $spacing-sizes: (
     'vh': 100vh,
     'vw': 100vw,
     'full': 100%,
+    'auto': auto,
 );
 
 $spacing-props: (
@@ -122,6 +127,29 @@ $spacing-props: (
 @mixin my($size) {
     margin-top: getSize($size);
     margin-bottom: getSize($size);
+}
+@mixin m-($size) {
+    margin: - getSize($size);
+}
+@mixin ml-($size) {
+    margin-left: - getSize($size);
+}
+@mixin mr-($size) {
+    margin-right: - getSize($size);
+}
+@mixin mt-($size) {
+    margin-top: - getSize($size);
+}
+@mixin mb-($size) {
+    margin-bottom: - getSize($size);
+}
+@mixin mx-($size) {
+    margin-left: - getSize($size);
+    margin-right: - getSize($size);
+}
+@mixin my-($size) {
+    margin-top: - getSize($size);
+    margin-bottom: - getSize($size);
 }
 
 // Width

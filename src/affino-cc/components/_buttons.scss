@@ -1,31 +1,86 @@
-@use '../abstracts/' as *;
+@use "../abstracts/" as *;
 
 // Button transition
 @mixin btn-transition($duration: 0.25s) {
-    transition-property: color, background-color, border-color,
-        text-decoration-color, fill, stroke;
-    transition-timing-function: ease-in-out;
-    transition-duration: $duration;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: ease-in-out;
+  transition-duration: $duration;
 }
 
 // Button Mixin
 @mixin btn($bg-color: var(--primary-color)) {
-    text-decoration: none;
-    cursor: pointer;
-    background-color: $bg-color;
-    @include btn-transition();
-    @include display('inline-flex');
-    @include fs('sm');
-    @include fw('600');
-    @include border('0');
-    @include rounded('sm');
-    @include px('18');
-    @include py('12');
-    @include tracking('wide');
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: $bg-color;
+  @include btn-transition();
+  @include display("inline-flex");
+  @include items("center");
+  @include fs("xs");
+  @include fw("600");
+  @include border("0");
+  @include rounded("sm");
+  @include px("14");
+  // @include py('10');
+  @include h("40");
+  @include tracking("wide");
+  @include align("center");
+
+  @include lg {
+    @include fs("sm");
+    @include px("18");
+    // @include py('12');
+    @include h("44");
+  }
+}
+
+@mixin btn-icon-left() {
+  @include mr("8");
+  @include leading("none");
+  @include ml-("8");
+}
+@mixin btn-icon-right() {
+  @include ml("8");
+  @include leading("none");
+  @include mr-("8");
+}
+
+@mixin btn-sm-icon-left() {
+  @include mr("4");
+  @include leading("none");
+  @include ml-("4");
+}
+@mixin btn-sm-icon-right() {
+  @include ml("4");
+  @include leading("none");
+  @include mr-("4");
 }
 
 @mixin btn-sm() {
-    @include fs('xs');
-    @include px('12');
-    @include py('10');
+  @include h("34");
+  @include fs("xxs");
+  @include px("10");
+  // @include py('8');
+
+  @include lg {
+    @include fs("xs");
+    @include px("12");
+    // @include py('10');
+    @include h("40");
+  }
 }
+
+@mixin btn-xs() {
+    @include h("30");
+    @include fs("xxxs");
+    @include px("10");
+    // @include py('8');
+  
+    @include lg {
+      @include fs("xxs");
+      @include px("12");
+      // @include py('10');
+      @include h("34");
+    }
+  }

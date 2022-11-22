@@ -38,6 +38,28 @@
                     }
                 }
             }
+            // Create margins (inc minus)
+            @else if (string.index($prop, 'margin')) {
+                @each $rule in $prop {
+                    @if ($screen-size == 'xs') {
+                        .-#{$prefix}-#{$size} {
+                            #{$rule}: - $value;
+                        }
+                        .#{$prefix}-#{$size} {
+                            #{$rule}: $value;
+                        }
+                    } @else {
+                        @media (min-width: #{$breakpoint}) {
+                            .-#{$prefix}-#{$size}\@#{$screen-size} {
+                                #{$rule}: - $value;
+                            }
+                            .#{$prefix}-#{$size}\@#{$screen-size} {
+                                #{$rule}: $value;
+                            }
+                        }
+                    }
+                }
+            }
             // All other properties applied here
             @else {
                 @if ($screen-size == 'xs') {

@@ -48,7 +48,8 @@ $type-utils: (
     'line-height': (
         'prefix': 'leading',
         'variants': (
-            'none': 1,
+            'none': 0,
+            'tightest': 1,
             'tight': 1.25,
             'snug': 1.375,
             'normal': 1.5,
@@ -95,5 +96,5 @@ $type-utils: (
 
 // Text Align
 @mixin align($variant: 'left') {
-    letter-spacing: getTypeVariants('text-align', $variant);
+    text-align: getTypeVariants('text-align', $variant);
 }
