@@ -17,6 +17,7 @@
   @include btn-transition();
   @include display("inline-flex");
   @include items("center");
+  @include justify('center');
   @include fs("xs");
   @include fw("600");
   @include border("0");
@@ -58,17 +59,17 @@
 }
 
 @mixin btn-sm() {
-  @include h("34");
-  @include fs("xxs");
-  @include px("10");
+  // @include h("34");
+  // @include fs("xxs");
+  // @include px("10");
   // @include py('8');
 
-  @include lg {
+  // @include lg {
     @include fs("xs");
     @include px("12");
     // @include py('10');
     @include h("40");
-  }
+  // }
 }
 
 @mixin btn-xs() {

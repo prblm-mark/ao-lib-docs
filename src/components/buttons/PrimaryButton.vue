@@ -33,37 +33,4 @@ defineProps({
     </button>
 </template>
 
-<style lang="scss">
-// .btn-primary {
-//     @include btn(var(--primary-color));
-//     color: var(--primary-text-color);
-//     &:hover,
-//     &:focus {
-//         background-color: var(--primary-active-color);
-//     }
-
-//     .btn-icon-left {
-//         @include btn-icon-left;
-//     }
-
-//     .btn-icon-right {
-//         @include btn-icon-right;
-//     }
-// }
-
-// .btn-full {
-//     @include w('full');
-//     @include display('block');
-// }
-// .btn-sm {
-//     @include btn-sm;
-
-//     .btn-icon-left {
-//         @include btn-sm-icon-left;
-//     }
-
-//     .btn-icon-right {
-//         @include btn-sm-icon-left;
-//     }
-// }
-</style>
+<style lang="scss"></style>

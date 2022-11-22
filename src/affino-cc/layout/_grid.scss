@@ -1,26 +1,63 @@
 @use 'sass:math';
 @use '../abstracts' as *;
 
+
 $grid-columns: 12;
 $grow: 0;
+
+
+
+// Get screen from breakpoints map
+@function getScreen($screen) {
+    @return map-get($breakpoints, $screen);
+}
 
 // base layout classes
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: getScreen('xl');
     margin: 0 auto;
-    padding: 0 20px;
     box-sizing: border-box;
+    @include p('md');
+    @include lg {
+        @include p('xl');
+    }
 }
-.row {
+
+/* --------------------------- Display Grid sftuff -------------------------- */
+
+.flex-row {
     display: flex;
     flex-flow: row wrap;
 }
-
-@mixin grid-column($width) {
+@mixin flex-column($width) {
     flex-grow: $grow;
     width: $width;
 }
-@mixin col($number) {
+@mixin flex-col($number) {
     width: math.div($number * 100%, $grid-columns);
+}
+
+/* --------------------------- Display Grid sftuff -------------------------- */
+
+@mixin grid-cols($number) {
+    grid-template-columns: repeat($number, minmax(0, 1fr));
+}
+@mixin col-start($number) {
+    grid-column-start: $number;
+}
+@mixin grid-rows($number) {
+    grid-template-rows: repeat($number, minmax(0, 1fr));
+}
+@mixin row-start($number) {
+    grid-row-start: $number;
+}
+@mixin grid-gap($size) {
+    gap: getSize($size);
+}
+@mixin column-gap($size) {
+    column-gap: getSize($size);
+}
+@mixin row-gap($size) {
+    row-gap: getSize($size);
 }

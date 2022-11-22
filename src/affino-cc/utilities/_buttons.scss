@@ -79,7 +79,6 @@
 /* ------------------------------- Full Width ------------------------------- */
 .btn-full {
     @include w('full');
-    @include display('block');
 }
 
 // Loop through all breakpoints

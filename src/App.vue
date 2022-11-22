@@ -10,6 +10,7 @@ import IconCircleArrowDown from './components/icons/IconCircleArrowDown.vue'
 import IconCircleArrowRight from './components/icons/IconCircleArrowRight.vue'
 import IconSmCircleArrowDown from './components/icons/IconSmCircleArrowDown.vue'
 import IconSmCircleArrowRight from './components/icons/IconSmCircleArrowRight.vue'
+import BaseInput from './components/form/BaseInput.vue'
 
 // import HelloWorld from "./components/HelloWorld.vue";
 function load() {
@@ -59,6 +60,48 @@ window.addEventListener('DOMContentLoaded', load)
 
         <div class="flex justify-end">
             <PrimaryButton id="mode">Toggle Theme</PrimaryButton>
+        </div>
+
+        <h3 class="heading-border">Grid Columns</h3>
+
+        <div
+            class="card my-40 grid grid-cols-1 grid-cols-2@sm grid-cols-3@md grid-cols-4@lg grid-cols-5@xl grid-gap-12"
+        >
+            <BaseInput />
+            <BaseInput />
+            <BaseInput />
+            <BaseInput />
+            <BaseInput />
+            <BaseInput />
+            <div
+                class="grid grid-cols-2 grid-gap-8 content-end col-start-2@sm col-start-3@md col-start-4@lg col-start-5@xl row-start-1@xl"
+            >
+                <PrimaryButton small>Apply</PrimaryButton>
+                <SecondaryButton small>Cancel</SecondaryButton>
+            </div>
+        </div>
+
+        <h3 class="heading-border">Flex Columns</h3>
+
+        <div class="card my-40">
+            <div class="flex-row flex-gap-8">
+                <div class="col-12 col-6@md col-4@lg">
+                    <BaseInput />
+                </div>
+                <div class="col-12 col-6@md col-4@lg">
+                    <BaseInput />
+                </div>
+                <div class="col-12 col-6@md col-4@lg">
+                    <BaseInput />
+                </div>
+
+                <div class="col-12 col-6@md col-4@lg">
+                    <BaseInput />
+                </div>
+                <div class="col-12 col-6@md col-4@lg">
+                    <BaseInput />
+                </div>
+            </div>
         </div>
 
         <!-- ----------------------------------------------------------------------- -->
@@ -222,16 +265,9 @@ window.addEventListener('DOMContentLoaded', load)
         <h3 class="heading-border mt-xl">Form Elements</h3>
 
         <div class="card">
-            <div class="row gap-8">
+            <div class="flex-row flex-gap-8">
                 <div class="col-12 col-6@md col-4@lg">
-                    <div class="form-element">
-                        <label class="form-label">Text</label>
-                        <input
-                            class="form-field"
-                            type="text"
-                            placeholder="Enter your name"
-                        />
-                    </div>
+                    <BaseInput />
                 </div>
                 <div class="col-12 col-6@md col-4@lg">
                     <div class="form-element">
@@ -266,7 +302,7 @@ window.addEventListener('DOMContentLoaded', load)
 
         <h3 class="heading-border mt-xl">Colors</h3>
 
-        <div class="row gap-4">
+        <div class="flex-row flex-gap-4">
             <div
                 class="col-4 col-2@md col-1@lg flex justify-center flex-wrap content-start"
             >
@@ -376,7 +412,7 @@ window.addEventListener('DOMContentLoaded', load)
                 <p class="txt-xs">Primary</p>
             </div>
         </div>
-        <div class="row gap-4 mt-12">
+        <div class="flex-row flex-gap-4 mt-12">
             <div
                 class="col-4 col-2@md col-1@lg flex justify-center flex-wrap content-start"
             >
@@ -526,7 +562,7 @@ window.addEventListener('DOMContentLoaded', load)
 
         <h3 class="heading-border mt-xl">Grid</h3>
 
-        <div class="row gap-8 mb-xl">
+        <div class="flex-row flex-gap-8 mb-xl">
             <div class="col-6 col-4@md col-3@lg">
                 <div class="card h-full">
                     <div class="user">
