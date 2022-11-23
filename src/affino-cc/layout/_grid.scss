@@ -61,3 +61,54 @@ $grow: 0;
 @mixin row-gap($size) {
     row-gap: getSize($size);
 }
+
+/* ---------------------------------- Test ---------------------------------- */
+
+@mixin grid-structure($col:1, $col-sm:null, $col-md:null, $col-lg:null, $row:1, $row-sm:null, $row-md:null, $row-lg:null) {
+    @include display('grid');
+    @include grid-gap('12');
+    grid-template-columns: repeat($col, minmax(0, 1fr));
+    grid-template-rows: repeat($row, minmax(0, 1fr));
+    grid-auto-flow: row;
+
+    @include sm {
+        @if $col-sm {
+            grid-template-columns: repeat($col-sm, minmax(0, 1fr));
+        }
+        @if $row-sm {
+            grid-template-rows: repeat($row-sm, minmax(0, 1fr));
+        }
+        
+    }
+    @include md {
+        @if $col-md {
+            grid-template-columns: repeat($col-md, minmax(0, 1fr));
+        }
+        @if $row-md {
+            grid-template-rows: repeat($row-md, minmax(0, 1fr));
+        }
+    }
+    @include lg {
+        @if $col-md {
+            grid-template-columns: repeat($col-lg, minmax(0, 1fr));
+        }
+        @if $row-lg {
+            grid-template-rows: repeat($row-lg, minmax(0, 1fr));
+        }
+    }
+}
+
+// create alt row mixin?
+
+.grid-col-flow-1234 {
+    @include grid-structure(1,2,3,4);
+}
+.grid-col-flow-1233 {
+    @include grid-structure(1,2,3,3);
+}
+.grid-col-flow-1224 {
+    @include grid-structure(1,2,2,4);
+}
+.grid-col-flow-2 {
+    @include grid-structure(2);
+}
