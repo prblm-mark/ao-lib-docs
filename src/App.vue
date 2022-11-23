@@ -11,6 +11,7 @@ import IconCircleArrowRight from './components/icons/IconCircleArrowRight.vue'
 import IconSmCircleArrowDown from './components/icons/IconSmCircleArrowDown.vue'
 import IconSmCircleArrowRight from './components/icons/IconSmCircleArrowRight.vue'
 import BaseInput from './components/form/BaseInput.vue'
+import MainMenu from './components/menu/MainMenu.vue'
 
 // import HelloWorld from "./components/HelloWorld.vue";
 function load() {
@@ -40,17 +41,6 @@ window.addEventListener('DOMContentLoaded', load)
 </script>
 
 <template>
-    <!-- <header>
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header> -->
-
     <!-- ----------------------------------------------------------------------- -->
     <!--                                Container                                -->
     <!-- ----------------------------------------------------------------------- -->
@@ -62,10 +52,31 @@ window.addEventListener('DOMContentLoaded', load)
             <PrimaryButton id="mode">Toggle Theme</PrimaryButton>
         </div>
 
+        <h3 class="heading-border mt-20">Grid Columns (Fixed Actions)</h3>
+
+        <div class="flex flex-wrap flex-nowrap@lg justify-end@md card mb-40">
+            <div
+                class="w-full grid grid-cols-1 grid-cols-2@sm grid-cols-3@md grid-cols-4@lg grid-gap-12"
+            >
+                <BaseInput />
+                <BaseInput />
+                <BaseInput />
+                <BaseInput />
+                <BaseInput />
+                <BaseInput />
+            </div>
+            <div
+                class="grid grid-cols-2 grid-gap-12 grid-gap-8@lg grid-rows-2@lg row-gap-12@lg items-end@lg w-full w-10xl@md mt-12 mt-0@lg ml-12@lg"
+            >
+                <PrimaryButton small>Apply</PrimaryButton>
+                <SecondaryButton small>Cancel</SecondaryButton>
+            </div>
+        </div>
+
         <h3 class="heading-border">Grid Columns</h3>
 
         <div
-            class="card my-40 grid grid-cols-1 grid-cols-2@sm grid-cols-3@md grid-cols-4@lg grid-cols-5@xl grid-gap-12"
+            class="card mb-40 grid grid-cols-1 grid-cols-2@sm grid-cols-3@md grid-cols-4@lg grid-cols-5@xl grid-gap-12"
         >
             <BaseInput />
             <BaseInput />
@@ -74,7 +85,7 @@ window.addEventListener('DOMContentLoaded', load)
             <BaseInput />
             <BaseInput />
             <div
-                class="grid grid-cols-2 grid-gap-8 content-end col-start-2@sm col-start-3@md col-start-4@lg col-start-5@xl row-start-1@xl"
+                class="grid grid-cols-2 grid-gap-8 col-start-2@sm col-start-3@md col-start-4@lg col-start-5@xl row-start-1@xl content-end"
             >
                 <PrimaryButton small>Apply</PrimaryButton>
                 <SecondaryButton small>Cancel</SecondaryButton>
@@ -83,7 +94,7 @@ window.addEventListener('DOMContentLoaded', load)
 
         <h3 class="heading-border">Flex Columns</h3>
 
-        <div class="card my-40">
+        <div class="card mb-40">
             <div class="flex-row flex-gap-8">
                 <div class="col-12 col-6@md col-4@lg">
                     <BaseInput />
@@ -607,8 +618,10 @@ window.addEventListener('DOMContentLoaded', load)
             </div>
         </div>
     </div>
-
-    <!-- <RouterView /> -->
+    <div class="flex container">
+        <MainMenu />
+        <RouterView />
+    </div>
 </template>
 
 <style lang="scss">

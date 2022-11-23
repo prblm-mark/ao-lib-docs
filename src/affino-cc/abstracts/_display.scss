@@ -46,7 +46,16 @@ $display-utils: (
         'prefix': 'flex',
         'variants': (
             'wrap': wrap,
-            'no-wrap': no-wrap,
+            'nowrap': nowrap,
+        ),
+    ),
+    'flex-direction': (
+        'prefix': 'flex',
+        'variants': (
+            'row': row,
+            'row-reverse': row-reverse,
+            'col': column,
+            'col-reverse': column-reverse,
         ),
     ),
 );
@@ -67,4 +76,13 @@ $display-utils: (
 }
 @mixin items($prop: 'center') {
     align-items: getDisplayVariants('align-items', $prop);
+}
+@mixin content($prop: 'center') {
+    align-items: getDisplayVariants('align-content', $prop);
+}
+@mixin flex-wrap() {
+    flex-wrap: getDisplayVariants('flex-wrap', $prop);
+}
+@mixin flex-direction() {
+    flex-direction: getDisplayVariants('flex-direction', $prop);
 }

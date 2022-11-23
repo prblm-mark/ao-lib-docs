@@ -26,8 +26,10 @@
     @include appearance();
 
     &:focus,
-    &:focus-visible {
+    &:focus-visible,
+    &:focus-within {
         outline: none;
+        outline-style: none;
         border-color: $transparent;
         box-shadow: 0 0 0 2px var(--focus-color);
     }
@@ -46,4 +48,11 @@ select.form-field {
     background-position: right 0.5rem center;
     background-repeat: no-repeat;
     background-size: 1.5em 1.5em;
+}
+
+input::-webkit-input-placeholder {
+    color: var(--content-text-color);
+}
+input[type="date"]::-webkit-clear-button {
+    opacity: 0;
 }
