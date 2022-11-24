@@ -2,7 +2,19 @@
 @use '../layout/' as *;
 @use 'sass:math';
 
-// grid gaps
+// Grid Column Flow - Custom Classes
+.grid-col-flow-1234 {
+    @include grid-col-flow(1,2,3,4);
+}
+.grid-col-flow-12 {
+    @include grid-col-flow(1,2);
+}
+.grid-col-flow-2 {
+    @include grid-col-flow(2);
+}
+
+
+// Grid gap utilities
 @each $screen-size, $breakpoint in $breakpoints {
     @each $key, $val in $spacing-sizes {
         @if ($screen-size == 'xs') {

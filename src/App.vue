@@ -52,6 +52,8 @@ window.addEventListener('DOMContentLoaded', load)
             <PrimaryButton id="mode">Toggle Theme</PrimaryButton>
         </div>
 
+        <h3 class="heading-border mt-20">Grid Columns (Fixed Actions)</h3>
+
         <div class="flex flex-wrap flex-nowrap@lg justify-end@md card mb-40">
             <div class="w-full grid-col-flow-1234">
                 <BaseInput />
@@ -63,27 +65,6 @@ window.addEventListener('DOMContentLoaded', load)
             </div>
             <div
                 class="grid-col-flow-2 grid-rows-2@lg row-gap-12@lg items-end@lg w-full w-10xl@md mt-12 mt-0@lg ml-12@lg"
-            >
-                <PrimaryButton small>Apply</PrimaryButton>
-                <SecondaryButton small>Cancel</SecondaryButton>
-            </div>
-        </div>
-
-        <h3 class="heading-border mt-20">Grid Columns (Fixed Actions)</h3>
-
-        <div class="flex flex-wrap flex-nowrap@lg justify-end@md card mb-40">
-            <div
-                class="w-full grid grid-cols-1 grid-cols-2@sm grid-cols-3@md grid-cols-4@lg grid-gap-12"
-            >
-                <BaseInput />
-                <BaseInput />
-                <BaseInput />
-                <BaseInput />
-                <BaseInput />
-                <BaseInput />
-            </div>
-            <div
-                class="grid grid-cols-2 grid-gap-12 grid-gap-8@lg grid-rows-2@lg row-gap-12@lg items-end@lg w-full w-10xl@md mt-12 mt-0@lg ml-12@lg"
             >
                 <PrimaryButton small>Apply</PrimaryButton>
                 <SecondaryButton small>Cancel</SecondaryButton>
