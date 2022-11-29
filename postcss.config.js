@@ -22,6 +22,7 @@ module.exports = {
                     /^router-link(|-exact)-active$/,
                     /data-v-.*/,
                     'dark-mode',
+                    '@',
                 ],
             }),
     ],
