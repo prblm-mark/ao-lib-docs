@@ -10,7 +10,7 @@ defineProps({
         required: false,
         default: false,
     },
-    xsmall: {
+    large: {
         type: Boolean,
         required: false,
         default: false,
@@ -21,7 +21,7 @@ defineProps({
 <template>
     <button
         class="btn-primary"
-        :class="{ 'btn-full': full, 'btn-sm': small, 'btn-xs': xsmall }"
+        :class="{ 'btn-full': full, 'btn-lg': large, 'btn-sm': small }"
     >
         <span v-if="$slots.iconLeft" class="btn-icon-left">
             <slot name="iconLeft" />

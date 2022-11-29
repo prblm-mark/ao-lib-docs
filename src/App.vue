@@ -35,9 +35,10 @@ window.addEventListener('DOMContentLoaded', load)
 <template>
     <div class="container pt-lg">
         <div class="flex justify-end">
-            <PrimaryButton id="mode">Toggle Theme</PrimaryButton>
+            <PrimaryButton large id="mode">Toggle Theme</PrimaryButton>
         </div>
     </div>
+
     <div class="flex flex-col flex-row@lg container mt-20">
         <MainMenu />
         <RouterView />

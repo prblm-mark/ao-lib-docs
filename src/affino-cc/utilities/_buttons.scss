@@ -61,19 +61,19 @@
 
 /* ---------------------------------- Small --------------------------------- */
 
-.btn-sm {
-    @include btn-sm();
+.btn-lg {
+    @include btn-lg();
 
     .btn-icon-left {
-        @include btn-sm-icon-left;
+        @include btn-lg-icon-left;
     }
     .btn-icon-right {
-        @include btn-sm-icon-right;
+        @include btn-lg-icon-right;
     }
 }
 
-.btn-xs {
-    @include btn-xs();
+.btn-sm {
+    @include btn-sm();
 }
 
 /* ------------------------------- Full Width ------------------------------- */

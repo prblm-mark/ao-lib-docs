@@ -19,67 +19,50 @@
   @include display("inline-flex");
   @include items("center");
   @include justify("center");
-  @include fs("sm");
   @include fw("600");
   @include border("0");
   @include rounded("sm");
-  @include px("18");
-  @include h("44");
+  @include h("40");
+  @include fs("xs");
+  @include px("12");
   @include tracking("wide");
   @include align("center");
 
-  @include md {
-    @include fs("sm");
-    @include px("18");
-    @include h("44");
-  }
 }
 
 // Large Button
-@mixin btn-sm() {
-  @include h("40");
-  @include fs("xs");
-  @include px("12");
-
-  @include md {
-  @include fs("xs");
-  @include px("12");
-  @include h("40");
-  }
+@mixin btn-lg() {
+  @include fs("sm");
+  @include px("18");
+  @include h("44");
 }
 
 // Small Button
-@mixin btn-xs() {
+@mixin btn-sm() {
   @include h("34");
   @include fs("xxs");
   @include px("12");
-
-  @include md {
-    @include fs("xxs");
-    @include px("12");
-    @include h("34");
-  }
 }
 
 // Large Button with icons
-@mixin btn-icon-left() {
+@mixin btn-lg-icon-left() {
   @include mr("8");
   @include leading("none");
   @include ml-("8");
 }
-@mixin btn-icon-right() {
+@mixin btn-lg-icon-right() {
   @include ml("8");
   @include leading("none");
   @include mr-("8");
 }
 
 // Standard Button with icons
-@mixin btn-sm-icon-left() {
+@mixin btn-icon-left() {
   @include mr("4");
   @include leading("none");
   @include ml-("4");
 }
-@mixin btn-sm-icon-right() {
+@mixin btn-icon-right() {
   @include ml("4");
   @include leading("none");
   @include mr-("4");

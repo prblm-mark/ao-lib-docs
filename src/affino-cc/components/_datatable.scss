@@ -1,0 +1,79 @@
+@use '../abstracts/' as *;
+@use './buttons' as *;
+
+.custom_datatable {   
+    overflow:hidden;
+    @include p('0');  
+    color:var(--content-text-color); 
+
+    .dataTables_wrapper > div {
+        @include p('16');
+
+        @include lg {
+            @include p('20');
+        }
+    }
+
+    * {
+        font-size:14px;
+    }
+
+    a {
+        color:var(--main-heading-color);
+    }
+
+    table {
+        @include m('0');
+        width:100% !important;
+        border-top: 0 !important;
+        border-bottom: 1px solid var(--content-border-color) !important;
+
+        thead {
+            td {
+                @include border('0');
+                color:var(--sub-heading-color);
+                font-weight: 600;
+
+                * {
+                    color:var(--sub-heading-color);
+                    font-weight: 600;
+                }
+            }
+        }
+
+        tr td {
+            border-top: 1px solid var(--content-border-color);
+            @include px('8');
+            @include py('16');            
+        }
+    }
+
+    .dataTables_length, 
+    .dataTables_filter, 
+    .dataTables_info, 
+    .dataTables_processing, 
+    .dataTables_paginate {
+        color:var(--content-text-color); 
+    }
+
+    select {
+        @include w('auto');
+        @include pr('24');
+    }
+
+    .dataTables_filter label {
+        @include display('flex');
+        @include items('center');
+    }
+
+    .dataTables_paginate a {
+        @include btn(transparent);
+        color: var(--secondary-text-color);
+        box-shadow: inset 0 0 0 1px var(--secondary-color);
+        &:hover,
+        &:focus {
+            color: var(--content-bg-color);
+            background-color: var(--secondary-color);
+        }
+    }
+}
