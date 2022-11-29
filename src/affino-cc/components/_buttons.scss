@@ -50,9 +50,9 @@
 
 // Small Button
 @mixin btn-xs() {
-  @include h("30");
-  @include fs("xxxs");
-  @include px("10");
+  @include h("34");
+  @include fs("xxs");
+  @include px("12");
 
   @include md {
     @include fs("xxs");
