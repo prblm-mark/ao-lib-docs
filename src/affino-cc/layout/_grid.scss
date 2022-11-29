@@ -16,9 +16,10 @@ $grow: 0;
     max-width: getScreen('xl');
     margin: 0 auto;
     box-sizing: border-box;
-    @include p('md');
+    @include px('md');
+    
     @include lg {
-        @include p('xl');
+        @include px('xl');
     }
 }
 

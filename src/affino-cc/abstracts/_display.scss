@@ -80,9 +80,9 @@ $display-utils: (
 @mixin content($prop: 'center') {
     align-items: getDisplayVariants('align-content', $prop);
 }
-@mixin flex-wrap() {
+@mixin flex-wrap($prop) {
     flex-wrap: getDisplayVariants('flex-wrap', $prop);
 }
-@mixin flex-direction() {
+@mixin flex-direction($prop) {
     flex-direction: getDisplayVariants('flex-direction', $prop);
 }

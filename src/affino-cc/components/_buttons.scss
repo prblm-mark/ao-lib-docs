@@ -13,29 +13,55 @@
   text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
+  min-width: max-content;
   background-color: $bg-color;
   @include btn-transition();
   @include display("inline-flex");
   @include items("center");
-  @include justify('center');
+  @include justify("center");
   @include fs("xs");
   @include fw("600");
   @include border("0");
   @include rounded("sm");
   @include px("14");
-  // @include py('10');
   @include h("40");
   @include tracking("wide");
   @include align("center");
 
-  @include lg {
+  @include md {
     @include fs("sm");
     @include px("18");
-    // @include py('12');
     @include h("44");
   }
 }
 
+// Large Button
+@mixin btn-sm() {
+  @include h("34");
+  @include fs("xxs");
+  @include px("10");
+
+  @include md {
+  @include fs("xs");
+  @include px("12");
+  @include h("40");
+  }
+}
+
+// Small Button
+@mixin btn-xs() {
+  @include h("30");
+  @include fs("xxxs");
+  @include px("10");
+
+  @include md {
+    @include fs("xxs");
+    @include px("12");
+    @include h("34");
+  }
+}
+
+// Large Button with icons
 @mixin btn-icon-left() {
   @include mr("8");
   @include leading("none");
@@ -47,6 +73,7 @@
   @include mr-("8");
 }
 
+// Standard Button with icons
 @mixin btn-sm-icon-left() {
   @include mr("4");
   @include leading("none");
@@ -57,31 +84,3 @@
   @include leading("none");
   @include mr-("4");
 }
-
-@mixin btn-sm() {
-  // @include h("34");
-  // @include fs("xxs");
-  // @include px("10");
-  // @include py('8');
-
-  // @include lg {
-    @include fs("xs");
-    @include px("12");
-    // @include py('10');
-    @include h("40");
-  // }
-}
-
-@mixin btn-xs() {
-    @include h("30");
-    @include fs("xxxs");
-    @include px("10");
-    // @include py('8');
-  
-    @include lg {
-      @include fs("xxs");
-      @include px("12");
-      // @include py('10');
-      @include h("34");
-    }
-  }

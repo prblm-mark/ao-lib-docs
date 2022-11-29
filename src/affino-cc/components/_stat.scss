@@ -1,20 +1,35 @@
 @use 'sass:math';
 @use '../abstracts/' as *;
 @use '../theme/' as *;
+@use './card' as *;
 
 .stat {
+    @include card();
     @include display('flex');
     @include items('center');
+    @include p('12');
+
+    @include lg {
+        @include rounded('lg');
+        @include p('12');
+    }
 
     .stat-icon {
         background-color: var(--primary-color);
-        fill: var(--primary-text-color);
-        @include h('2xl');
-        @include w('2xl');
+        color: var(--primary-text-color);
+        @include h('xl');
+        @include w('xl');
         @include rounded();
         @include display('flex');
         @include justify('center');
         @include items('center');
         @include mr('16');
+        flex-shrink: 0;
+
+        @include md {
+            @include h('2xl');
+            @include w('2xl');
+        }
+
     }
 }

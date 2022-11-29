@@ -2,7 +2,7 @@
 @use '../abstracts/' as *;
 @use '../theme/' as *;
 
-.card {
+@mixin card {
     background-color: var(--content-bg-color);
     @include display('block');
     @include p('14');
@@ -16,6 +16,10 @@
         @include rounded('lg');
         @include p('20');
     }
+}
+
+.card {
+    @include card;
 
     .card-title {
         color: var(--content-title-color);
@@ -25,7 +29,6 @@
     }
     .card-body {
         color: var(--content-text-color);
-        @include mb('md');
         a {
             color: var(--primary-color);
             text-decoration: underline;
