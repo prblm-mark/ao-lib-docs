@@ -1,3 +1,5 @@
+/* purgecss start ignore */
+
 @use '../abstracts/' as *;
 
 /* Box sizing rules */
@@ -90,3 +92,5 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         scroll-behavior: auto !important;
     }
 }
+
+/* purgecss end ignore */

@@ -68,8 +68,8 @@ import SecondaryButton from '../components/buttons/SecondaryButton.vue'
             <div
                 class="grid-col-flow-2 grid-rows-2@lg row-gap-12@lg col-gap-6@lg items-end@lg w-full w-10xl@md mt-12 mt-0@lg ml-12@lg"
             >
-                <PrimaryButton small>Apply</PrimaryButton>
-                <SecondaryButton small>Cancel</SecondaryButton>
+                <PrimaryButton>Apply</PrimaryButton>
+                <SecondaryButton>Cancel</SecondaryButton>
             </div>
         </div>
     </div>
