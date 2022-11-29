@@ -16,14 +16,17 @@ module.exports = {
                         ) || []
                     )
                 },
-                safelist: [
-                    /-(leave|enter|appear)(|-(to|from|active))$/,
-                    /^(?!(|.*?:)cursor-move).+-move$/,
-                    /^router-link(|-exact)-active$/,
-                    /data-v-.*/,
-                    'dark-mode',
-                    '@',
-                ],
+                safelist: {
+                    standard: [
+                        /-(leave|enter|appear)(|-(to|from|active))$/,
+                        /^(?!(|.*?:)cursor-move).+-move$/,
+                        /^router-link(|-exact)-active$/,
+                        /data-v-.*/,
+                        'dark-mode',
+                    ],
+
+                    greedy: [/@$/],
+                },
             }),
     ],
 }
