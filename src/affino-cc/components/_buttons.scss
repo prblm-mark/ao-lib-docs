@@ -19,12 +19,12 @@
   @include display("inline-flex");
   @include items("center");
   @include justify("center");
-  @include fs("xs");
+  @include fs("sm");
   @include fw("600");
   @include border("0");
   @include rounded("sm");
-  @include px("14");
-  @include h("40");
+  @include px("18");
+  @include h("44");
   @include tracking("wide");
   @include align("center");
 
@@ -37,9 +37,9 @@
 
 // Large Button
 @mixin btn-sm() {
-  @include h("34");
-  @include fs("xxs");
-  @include px("10");
+  @include h("40");
+  @include fs("xs");
+  @include px("12");
 
   @include md {
   @include fs("xs");
