@@ -1,6 +1,6 @@
 <script setup>
 import DemoType from '../components/code/DemoType.vue'
-import SnippetHTML from '../components/code/snippetHTML.vue'
+import SnippetHTML from '../components/code/SnippetHTML.vue'
 import SnippetSASS from '../components/code/SnippetSASS.vue'
 import IconMobile from '../components/icons/IconMobile.vue'
 import IconDesktop from '../components/icons/IconDesktop.vue'
