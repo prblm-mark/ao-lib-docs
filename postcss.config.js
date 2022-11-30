@@ -17,7 +17,6 @@ module.exports = {
                         ) || []
                     )
                 },
-                // defaultExtractor: (content) => content.match(/[\w-/.:]+(?<!:)/g) || [],
                 safelist: [
                     /-(leave|enter|appear)(|-(to|from|active))$/,
                     /^(?!(|.*?:)cursor-move).+-move$/,

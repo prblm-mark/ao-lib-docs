@@ -21,7 +21,6 @@ export default defineConfig({
                                   @import "./src/affino-cc/abstracts/_display.scss";
                                   @import "./src/affino-cc/abstracts/_type.scss";
                                   @import "./src/affino-cc/abstracts/_breakpoints.scss";
-                                  
                                  `,
             },
         },

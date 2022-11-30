@@ -23,72 +23,29 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4 {
-    color: var(--main-heading-color);
-    @include fw('700');
-    @include leading('tight');
-}
-h5,
-h6 {
-    color: var(--sub-heading-color);
-    @include fw('500');
-    @include leading('tight');
-}
-
-h1,
 .h1 {
-    @include fs('2xl');
-    @include fw('800');
-
-    @include lg {
-        @include fs('3xl');
-    }
+    @include h1();
 }
-
 h2,
 .h2 {
-    @include fs('xl');
-
-    @include lg {
-        @include fs('2xl');
-    }
+    @include h2();
 }
 h3,
 .h3 {
-    @include fs('lg');
-
-    @include lg {
-        @include fs('xl');
-    }
+    @include h3();
 }
 
 h4,
 .h4 {
-    @include fs('base');
-
-    @include lg {
-        @include fs('lg');
-    }
+    @include h4();
 }
-
 h5,
 .h5 {
-    @include fs('sm');
-
-    @include lg {
-        @include fs('base');
-    }
+    @include h5();
 }
-
 h6,
 .h6 {
-    @include fs('sm');
-
-    @include lg {
-        @include fs('sm');
-    }
+    @include h6();
 }
 
 strong {
@@ -107,28 +64,16 @@ a {
     }
 }
 
-.txt-md {
-    @include fs('xs');
-
-    @include lg {
-        @include fs('sm');
-    }
+.text-md {
+    @include text-md();
 }
 
-.txt-sm {
-    @include fs('xxs');
-
-    @include lg {
-        @include fs('xs');
-    }
+.text-sm {
+    @include text-sm();
 }
 
-.txt-xs {
-    @include fs('xxxs');
-
-    @include lg {
-        @include fs('xxs');
-    }
+.text-xs {
+    @include text-xs();
 }
 
 /* purgecss end ignore */

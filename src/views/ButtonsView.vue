@@ -15,7 +15,7 @@ import IconSmCircleArrowRight from '@/components/icons/IconSmCircleArrowRight.vu
         <h3 class="heading-border">Buttons</h3>
 
         <div class="card mb-lg">
-            <p class="txt-md mb-12"><strong>Large</strong></p>
+            <p class="text-md mb-12"><strong>Large</strong></p>
 
             <div class="flex mb-sm">
                 <PrimaryButton large class="mr-6">Primary</PrimaryButton>
@@ -73,7 +73,7 @@ import IconSmCircleArrowRight from '@/components/icons/IconSmCircleArrowRight.vu
         </div>
 
         <div class="card mb-lg">
-            <p class="txt-md mb-12"><strong>Standard</strong></p>
+            <p class="text-md mb-12"><strong>Standard</strong></p>
             <div class="flex mb-sm">
                 <PrimaryButton class="mr-6">Primary</PrimaryButton>
 
@@ -130,7 +130,7 @@ import IconSmCircleArrowRight from '@/components/icons/IconSmCircleArrowRight.vu
         </div>
 
         <div class="card">
-            <p class="txt-md mb-12"><strong>Small</strong> (No Icon Allowed)</p>
+            <p class="text-md mb-12"><strong>Small</strong> (No Icon Allowed)</p>
             <div class="flex">
                 <PrimaryButton class="mr-6" small>Primary</PrimaryButton>
                 <SecondaryButton class="mr-6" small>Secondary</SecondaryButton>

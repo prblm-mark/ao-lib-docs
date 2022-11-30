@@ -1,47 +1,110 @@
-<script setup></script>
+<script setup>
+import DemoType from '../components/code/DemoType.vue'
+import SnippetHTML from '../components/code/snippetHTML.vue'
+import SnippetSASS from '../components/code/SnippetSASS.vue'
+import IconMobile from '../components/icons/IconMobile.vue'
+import IconDesktop from '../components/icons/IconDesktop.vue'
+import HeadingData from '../data/demoHeadingData.json'
+import TextSizes from '../data/demoTextData.json'
+</script>
 
 <template>
     <div class="w-full">
-        <h3 class="heading-border">Typography</h3>
+        <h1 class="heading-border">Typography</h1>
 
-        <p>Utilities for controlling the font size of an element.</p>
+        <p class="mb-20">
+            Utilities for controlling the font size of an element. All headings
+            are resized responsively, as are a number of the helper classes, as
+            highlighted below.
+        </p>
 
-        <code>
-            <span>&lt;</span>
-            <span>h1</span>
-            <span>></span>
+        <div
+            v-for="headings in HeadingData"
+            :key="headings.tag"
+            class="flex-row mb-40"
+        >
+            <div class="col-12 col-6@lg pr-10@lg">
+                <DemoType
+                    :fontSizeMobile="headings.fontSizeMobile"
+                    :fontSize="headings.fontSize"
+                    >{{ headings.heading }}
+                    <template #tag>{{ headings.tag }}</template>
+                    <template #icon><IconDesktop /></template>
+                    <template #details>{{ headings.details }}</template>
+                    <template #iconMobile><IconMobile /></template>
+                    <template #detailsMobile>{{
+                        headings.detailsMobile
+                    }}</template>
+                </DemoType>
+            </div>
+            <div
+                class="col-12 col-6@lg flex flex-wrap mt-20 mt-0@lg pl-10@lg row-gap-20"
+            >
+                <SnippetHTML>
+                    <template #tag>{{ headings.tag }}</template>
+                    {{ headings.heading }}
+                </SnippetHTML>
+                <SnippetSASS>
+                    <template #syntax>@include</template>
+                    {{ headings.tag }}()
+                </SnippetSASS>
+            </div>
+        </div>
 
-            This is a heading 1
-            <span>&lt;/</span>
-            <span class="code-highlight">h1</span>
-            <span>></span>
-        </code>
+        <!-- Normal Text -->
+        <div class="flex-row mb-40">
+            <div class="col-12 col-6@lg pr-10@lg">
+                <DemoType :fontSizeMobile="'fs-md'"
+                    >Normal Text
+                    <template #tag>p</template>
+                    <template #icon><IconDesktop /></template>
+                    <template #details>1rem/16px</template>
+                    <template #iconMobile><IconMobile /></template>
+                    <template #detailsMobile>0.9375rem/15px</template>
+                </DemoType>
+            </div>
+            <div
+                class="col-12 col-6@lg flex flex-wrap mt-20 mt-0@lg pl-10@lg row-gap-20"
+            >
+                <SnippetHTML>
+                    <template #tag>*</template>
+                    Applies to all text by default
+                </SnippetHTML>
+            </div>
+        </div>
 
-        <div class="card">
-            <div class="flex-row">
-                <div class="col-12 col-6@lg">
-                    <h1 class="mb-10">Heading 1</h1>
-                    <h2 class="mb-10">Heading 2</h2>
-                    <h3 class="mb-10">Heading 3</h3>
-                    <h4 class="mb-10">Heading 4</h4>
-                    <h5 class="mb-10">Heading 5</h5>
-                    <h6 class="mb-12">Heading 6</h6>
-                </div>
-
-                <div class="col-12 col-6@lg">
-                    <p class="mb-6">Normal Text</p>
-                    <p class="mb-6"><strong>Bold Text</strong></p>
-                    <p class="mb-12"><a href="#">Link</a></p>
-
-                    <p class="txt-md mb-6">Medium Text</p>
-                    <p class="txt-md mb-12"><strong>Medium Bold</strong></p>
-
-                    <p class="txt-sm mb-6">Small Text</p>
-                    <p class="txt-sm mb-12"><strong>Small Bold</strong></p>
-
-                    <p class="txt-xs mb-6">XSmall Text</p>
-                    <p class="txt-xs mb-12"><strong>XSmall Bold</strong></p>
-                </div>
+        <!-- Text sizes -->
+        <div
+            v-for="sizes in TextSizes"
+            :key="sizes.text"
+            class="flex-row mb-40"
+        >
+            <div class="col-12 col-6@lg pr-10@lg">
+                <DemoType
+                    :fontSizeMobile="sizes.fontSizeMobile"
+                    :fontSize="sizes.fontSize"
+                    >{{ sizes.text }}
+                    <template #tag>{{ sizes.tag }}</template>
+                    <template #icon><IconDesktop /></template>
+                    <template #details>{{ sizes.details }}</template>
+                    <template #iconMobile><IconMobile /></template>
+                    <template #detailsMobile>{{
+                        sizes.detailsMobile
+                    }}</template>
+                </DemoType>
+            </div>
+            <div
+                class="col-12 col-6@lg flex flex-wrap mt-20 mt-0@lg pl-10@lg row-gap-20"
+            >
+                <SnippetHTML>
+                    <template #tag>{{ sizes.tag }}</template>
+                    <template #class>{{ sizes.selector }}</template>
+                    {{ sizes.text }}
+                </SnippetHTML>
+                <SnippetSASS>
+                    <template #syntax>@include</template>
+                    {{ sizes.selector }}()
+                </SnippetSASS>
             </div>
         </div>
     </div>

@@ -1,8 +1,10 @@
+@use './breakpoints' as *;
+
 $type-utils: (
     'font-size': (
         'prefix': 'fs',
         'variants': (
-            'xxxs': 0.65rem,
+            'xxxs': 0.6875rem,
             'xxs': 0.75rem,
             'xs': 0.8125rem,
             'sm': 0.875rem,
@@ -98,3 +100,95 @@ $type-utils: (
 @mixin align($variant: 'left') {
     text-align: getTypeVariants('text-align', $variant);
 }
+
+// h1
+@mixin h1($color: var(--main-heading-color)){
+    color: $color;
+    @include fs('2xl');
+    @include fw('800');
+    @include leading('tight');
+
+    @include lg {
+        @include fs('3xl');
+    }
+}
+
+// h2
+@mixin h2($color: var(--main-heading-color)){
+    color: $color;
+    @include fs('xl');
+    @include fw('700');
+
+    @include lg {
+        @include fs('2xl');
+    }
+}
+
+// h3
+@mixin h3($color: var(--main-heading-color)){
+    color: $color;
+    @include fs('lg');
+    @include fw('700');
+
+    @include lg {
+        @include fs('xl');
+    }
+}
+
+// h4
+@mixin h4($color: var(--main-heading-color)){
+    color: $color;
+    @include fs('base');
+    @include fw('700');
+
+    @include lg {
+        @include fs('lg');
+    }
+}
+
+// h5
+@mixin h5($color: var(--sub-heading-color)){
+    color: $color;
+    @include fs('md');
+    @include fw('500');
+
+    @include lg {
+        @include fs('base');
+    }
+}
+
+// h6
+@mixin h6($color: var(--sub-heading-color)){
+    color: $color;
+    @include fs('sm');
+    @include fw('500');
+}
+
+// text medium
+@mixin text-md(){
+    @include fs('xs');
+
+    @include lg {
+        @include fs('sm');
+    }
+}
+
+// text small
+@mixin text-sm(){
+    @include fs('xxs');
+
+    @include lg {
+        @include fs('xs');
+    }
+}
+
+// text xsmall
+@mixin text-xs(){
+    @include fs('xxxs');
+
+    @include lg {
+        @include fs('xxs');
+    }
+}
+
+

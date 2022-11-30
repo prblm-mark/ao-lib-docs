@@ -1,0 +1,29 @@
+[
+    {
+        "text": "Text Medium",
+        "tag": "p",
+        "details": "0.875rem/14px",
+        "detailsMobile" : "0.8125rem/13px",
+        "fontSize" : "fs-md",
+        "fontSizeMobile" : "fs-sm",
+        "selector": "text-md"
+    },
+    {
+        "text": "Text Small",
+        "tag": "p",
+        "details": "0.8125rem/13px",
+        "detailsMobile" : "0.75rem/12px",
+        "fontSize" : "fs-sm",
+        "fontSizeMobile" : "fs-xs",
+        "selector": "text-sm"
+    },
+    {
+        "text": "Text XSmall",
+        "tag": "p",
+        "details": "0.75rem/12px",
+        "detailsMobile" : "0.6875rem/11px",
+        "fontSize" : "fs-xs",
+        "fontSizeMobile" : "fs-xxs",
+        "selector": "text-xs"
+    }
+]

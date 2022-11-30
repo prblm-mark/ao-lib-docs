@@ -13,7 +13,7 @@
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--page-bg-color)"
                     ></div>
-                    <p class="txt-xs">Page Bg</p>
+                    <p class="text-xs">Page Bg</p>
                 </div>
                 <div class="color">
                     <div
@@ -23,42 +23,42 @@
                             border-color: var(--content-border-color);
                         "
                     ></div>
-                    <p class="txt-xs">Content Bg</p>
+                    <p class="text-xs">Content Bg</p>
                 </div>
                 <div class="color">
                     <div
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--content-border-color)"
                     ></div>
-                    <p class="txt-xs">Border</p>
+                    <p class="text-xs">Border</p>
                 </div>
                 <div class="color">
                     <div
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--content-text-color)"
                     ></div>
-                    <p class="txt-xs">Content Text</p>
+                    <p class="text-xs">Content Text</p>
                 </div>
                 <div class="color">
                     <div
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--content-title-color)"
                     ></div>
-                    <p class="txt-xs">Content Title</p>
+                    <p class="text-xs">Content Title</p>
                 </div>
                 <div class="color">
                     <div
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--main-heading-color)"
                     ></div>
-                    <p class="txt-xs">Main Heading</p>
+                    <p class="text-xs">Main Heading</p>
                 </div>
                 <div class="color">
                     <div
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--sub-heading-color)"
                     ></div>
-                    <p class="txt-xs">Sub Heading</p>
+                    <p class="text-xs">Sub Heading</p>
                 </div>
                 <div class="color">
                     <div
@@ -68,7 +68,7 @@
                             border-color: var(--content-border-color);
                         "
                     ></div>
-                    <p class="txt-xs">Dark Panel</p>
+                    <p class="text-xs">Dark Panel</p>
                 </div>
                 <div class="color">
                     <div
@@ -78,28 +78,28 @@
                             border-color: var(--content-border-color);
                         "
                     ></div>
-                    <p class="txt-xs">Darker Panel</p>
+                    <p class="text-xs">Darker Panel</p>
                 </div>
                 <div class="color">
                     <div
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--dark-surface-text-color)"
                     ></div>
-                    <p class="txt-xs">Panel Text</p>
+                    <p class="text-xs">Panel Text</p>
                 </div>
                 <div class="color">
                     <div
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--action-panel-color)"
                     ></div>
-                    <p class="txt-xs">Action Panel</p>
+                    <p class="text-xs">Action Panel</p>
                 </div>
                 <div class="color">
                     <div
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--primary-color)"
                     ></div>
-                    <p class="txt-xs">Primary</p>
+                    <p class="text-xs">Primary</p>
                 </div>
 
                 <div class="color">
@@ -107,7 +107,7 @@
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--primary-active-color)"
                     ></div>
-                    <p class="txt-xs">Primary Active</p>
+                    <p class="text-xs">Primary Active</p>
                 </div>
                 <div class="color">
                     <div
@@ -117,56 +117,56 @@
                             border-color: var(--content-border-color);
                         "
                     ></div>
-                    <p class="txt-xs">Primary Text</p>
+                    <p class="text-xs">Primary Text</p>
                 </div>
                 <div class="color">
                     <div
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--secondary-color)"
                     ></div>
-                    <p class="txt-xs">Secondary</p>
+                    <p class="text-xs">Secondary</p>
                 </div>
                 <div class="color">
                     <div
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--secondary-active-color)"
                     ></div>
-                    <p class="txt-xs align-center">Secondary Active</p>
+                    <p class="text-xs align-center">Secondary Active</p>
                 </div>
                 <div class="color">
                     <div
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--secondary-text-color)"
                     ></div>
-                    <p class="txt-xs align-center">Secondary Text</p>
+                    <p class="text-xs align-center">Secondary Text</p>
                 </div>
                 <div class="color">
                     <div
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--error-color)"
                     ></div>
-                    <p class="txt-xs">Error</p>
+                    <p class="text-xs">Error</p>
                 </div>
                 <div class="color">
                     <div
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--focus-color)"
                     ></div>
-                    <p class="txt-xs">Focus</p>
+                    <p class="text-xs">Focus</p>
                 </div>
                 <div class="color">
                     <div
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--table-heading-color)"
                     ></div>
-                    <p class="txt-xs">Table Heading</p>
+                    <p class="text-xs">Table Heading</p>
                 </div>
                 <div class="color">
                     <div
                         class="w-full h-xl rounded-sm mb-6"
                         style="background-color: var(--input-border-color)"
                     ></div>
-                    <p class="txt-xs">Input Border</p>
+                    <p class="text-xs">Input Border</p>
                 </div>
                 <div class="color">
                     <div
@@ -176,7 +176,7 @@
                             border-color: var(--content-border-color);
                         "
                     ></div>
-                    <p class="txt-xs align-center">Input Background</p>
+                    <p class="text-xs align-center">Input Background</p>
                 </div>
                 <div class="color">
                     <div
@@ -186,7 +186,7 @@
                             border-color: var(--content-border-color);
                         "
                     ></div>
-                    <p class="txt-xs align-center">Filters Background</p>
+                    <p class="text-xs align-center">Filters Background</p>
                 </div>
             </div>
         </div>
