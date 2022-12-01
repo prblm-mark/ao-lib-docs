@@ -47,6 +47,11 @@ const router = createRouter({
             name: 'filters',
             component: () => import('../views/FiltersView.vue'),
         },
+        {
+            path: '/font-sizes',
+            name: 'font-sizes',
+            component: () => import('../views/FontSizeView.vue'),
+        },
     ],
 })
 

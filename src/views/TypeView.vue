@@ -12,11 +12,13 @@ import TextSizes from '../data/demoTextData.json'
     <div class="w-full">
         <h1 class="heading-border">Typography</h1>
 
-        <p class="mb-20">
+        <p class="mb-32">
             Utilities for controlling the font size of an element. All headings
             are resized responsively, as are a number of the helper classes, as
             highlighted below.
         </p>
+
+        <h3 class="heading-border">Responsive Type</h3>
 
         <div
             v-for="headings in HeadingData"

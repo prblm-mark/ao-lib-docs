@@ -14,6 +14,7 @@ const showMenu = ref(false)
 
         <menu :class="{ block: showMenu }">
             <RouterLink to="/">Typography</RouterLink>
+            <RouterLink to="/font-sizes">Font Sizes</RouterLink>
             <RouterLink to="/buttons">Buttons</RouterLink>
             <RouterLink to="/form-elements">Form Elements</RouterLink>
             <RouterLink to="/theme-colors">Theme Colors</RouterLink>

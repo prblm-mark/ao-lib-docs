@@ -1,0 +1,75 @@
+[
+    {
+        "class": "fs-xxxs",
+        "sass": "@include fs('xxxs')",
+        "property": "font-size: 0.6875rem",
+        "px" : "/* 11px */"
+    },
+    {
+        "class": "fs-xxs",
+        "sass": "@include fs('xxs')",
+        "property": "font-size: 0.75rem",
+        "px" : "/* 12px */"
+    },
+    {
+        "class": "fs-xs",
+        "sass": "@include fs('xs')",
+        "property": "font-size: 0.8125rem",
+        "px" : "/* 13px */"
+    },
+    {
+        "class": "fs-sm",
+        "sass": "@include fs('sm')",
+        "property": "font-size: 0.875rem",
+        "px" : "/* 14px */"
+    },
+    {
+        "class": "fs-md",
+        "sass": "@include fs('md')",
+        "property": "font-size: 0.9375rem",
+        "px" : "/* 15px */"
+    },
+    {
+        "class": "fs-base",
+        "sass": "@include fs('base')",
+        "property": "font-size: 1rem",
+        "px" : "/* 16px */"
+    },
+    {
+        "class": "fs-lg",
+        "sass": "@include fs('lg')",
+        "property": "font-size: 1.125rem",
+        "px" : "/* 18px */"
+    },
+    {
+        "class": "fs-xl",
+        "sass": "@include fs('xl')",
+        "property": "font-size: 1.25rem",
+        "px" : "/* 20px */"
+    },
+    {
+        "class": "fs-2xl",
+        "sass": "@include fs('2xl')",
+        "property": "font-size: 1.5rem",
+        "px" : "/* 24px */"
+    },
+    {
+        "class": "fs-3xl",
+        "sass": "@include fs('3xl')",
+        "property": "font-size: 1.875rem",
+        "px" : "/* 30px */"
+    },
+    {
+        "class": "fs-4xl",
+        "sass": "@include fs('4xl')",
+        "property": "font-size: 2.25rem",
+        "px" : "/* 36px */"
+    },
+    {
+        "class": "fs-5xl",
+        "sass": "@include fs('5xl')",
+        "property": "font-size: 3rem",
+        "px" : "/* 48px */"
+    }
+
+]

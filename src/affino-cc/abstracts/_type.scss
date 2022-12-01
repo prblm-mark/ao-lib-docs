@@ -166,6 +166,15 @@ $type-utils: (
 
 // text medium
 @mixin text-md(){
+    @include fs('sm');
+
+    @include lg {
+        @include fs('md');
+    }
+}
+
+// text small
+@mixin text-sm(){
     @include fs('xs');
 
     @include lg {
@@ -173,21 +182,12 @@ $type-utils: (
     }
 }
 
-// text small
-@mixin text-sm(){
+// text xsmall
+@mixin text-xs(){
     @include fs('xxs');
 
     @include lg {
         @include fs('xs');
-    }
-}
-
-// text xsmall
-@mixin text-xs(){
-    @include fs('xxxs');
-
-    @include lg {
-        @include fs('xxs');
     }
 }
 

@@ -56,7 +56,11 @@ window.addEventListener('DOMContentLoaded', load)
     @include w('full');
     @include p('18');
     @include fw('400');
-    @include fs('sm');
+    @include fs('xs');
+
+    @include md() {
+        @include fs('sm');
+    }
 
     .code-pill {
         font-family: 'Inter', sans-serif;
@@ -93,6 +97,21 @@ window.addEventListener('DOMContentLoaded', load)
     }
 }
 
+.code-highlight {
+    font-family: 'Fira Mono', monospace;
+    color: var(--main-heading-color);
+    background-color: getColor('mid-blue', 300);
+    border-radius: 0.25rem;
+    @include fw('500');
+    @include fs('xxs');
+    @include py('2');
+    @include px('6');
+
+    @include lg {
+        @include fs('xs');
+    }
+}
+
 :where(.dark-mode) {
     .code {
         background-color: getColor('slate', 700);
@@ -110,6 +129,9 @@ window.addEventListener('DOMContentLoaded', load)
         .code-content {
             color: getColor('slate', 200);
         }
+    }
+    .code-highlight {
+        background-color: getColor('slate', 800);
     }
 }
 </style>
