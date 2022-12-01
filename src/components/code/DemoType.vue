@@ -1,11 +1,20 @@
 <script setup>
-import { useSlots } from 'vue'
+import { useSlots, computed } from 'vue'
 const props = defineProps({
     fontSize: String,
     fontSizeMobile: String,
 })
 const slots = useSlots()
 const tagName = slots.tag()[0].children
+
+const fontSizeClass = computed(() => ({
+    'fs-xl': props.fontSize == 'fs-xl',
+    'fs-lg': props.fontSize == 'fs-lg',
+    'fs-md': props.fontSize == 'fs-md',
+    'fs-base': props.fontSize == 'fs-base',
+    'fs-xs': props.fontSize == 'fs-xs',
+    'fs-sm': props.fontSize == 'fs-sm',
+}))
 </script>
 
 <template>
@@ -15,7 +24,7 @@ const tagName = slots.tag()[0].children
             <div>
                 <component
                     :is="tagName"
-                    :class="props.fontSize"
+                    :class="fontSizeClass"
                     class="leading-tightest mb-6"
                 >
                     <slot />
