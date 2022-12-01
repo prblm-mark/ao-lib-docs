@@ -4,8 +4,13 @@ module.exports = {
     plugins: [
         IN_PRODUCTION &&
             require('@fullhuman/postcss-purgecss')({
-                // content: [`./public/**/*.html`, `index.html`, `./src/**/*.vue`],
-                content: ['index.html', '**/*.js', '**/*.html', '**/*.vue'],
+                content: [
+                    `./public/**/*.html`,
+                    `./dist/**/*.html`,
+                    `index.html`,
+                    `./src/**/*.vue`,
+                ],
+                // content: ['index.html', '**/*.js', '**/*.html', '**/*.vue'],
                 defaultExtractor(content) {
                     const contentWithoutStyleBlocks = content.replace(
                         /<style[^]+?<\/style>/gi,
