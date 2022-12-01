@@ -8,7 +8,8 @@ const slots = useSlots()
 const tagName = slots.tag()[0].children
 
 const fontSizeClass = computed(() => ({
-    'fs-2xl': props.fontSize == 'fs-xl',
+    'fs-3xl': props.fontSize == 'fs-3xl',
+    'fs-2xl': props.fontSize == 'fs-2xl',
     'fs-xl': props.fontSize == 'fs-xl',
     'fs-lg': props.fontSize == 'fs-lg',
     'fs-md': props.fontSize == 'fs-md',

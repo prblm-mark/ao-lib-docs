@@ -4,6 +4,7 @@
         "tag": "h1",
         "details": "1.875rem/30px",
         "detailsMobile" : "1.5rem/24px",
+        "fontSize" : "fs-3xl",
         "fontSizeMobile" : "fs-2xl"
     },
     {
@@ -11,6 +12,7 @@
         "tag": "h2",
         "details": "1.5rem/24px",
         "detailsMobile" : "1.25rem/20px",
+        "fontSize" : "fs-2xl",
         "fontSizeMobile" : "fs-xl"
     },
     {
@@ -18,6 +20,7 @@
         "tag": "h3",
         "details": "1.25rem/20px",
         "detailsMobile" : "1.125rem/18px",
+        "fontSize" : "fs-xl",
         "fontSizeMobile" : "fs-lg"
     },
     {
@@ -25,6 +28,7 @@
         "tag": "h4",
         "details": "1.125rem/18px",
         "detailsMobile" : "1rem/16px",
+        "fontSize" : "fs-lg",
         "fontSizeMobile" : "fs-base"
     },
     {
@@ -32,6 +36,7 @@
         "tag": "h5",
         "details": "1rem/16px",
         "detailsMobile" : "0.9375rem/15px",
+        "fontSize" : "fs-base",
         "fontSizeMobile" : "fs-md"
     },
     {
@@ -39,6 +44,7 @@
         "tag": "h6",
         "details": "0.875rem/14px",
         "detailsMobile" : "0.875rem/14px",
+        "fontSize" : "fs-md",
         "fontSizeMobile" : "fs-sm"
     }
 ]
