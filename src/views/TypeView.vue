@@ -80,7 +80,6 @@ import TextSizes from '../data/demoTextData.json'
             class="flex-row mb-40"
         >
             <div class="col-12 col-6@lg pr-10@lg">
-                <p class="fs-xl">font test</p>
                 <DemoType
                     :fontSizeMobile="sizes.fontSizeMobile"
                     :fontSize="sizes.fontSize"
