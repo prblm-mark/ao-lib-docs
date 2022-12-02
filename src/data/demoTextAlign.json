@@ -1,0 +1,20 @@
+[{
+        "class": "align-left",
+        "sass": "@include align('left')",
+        "property": "text-align: left;",
+        "px" : ""
+    },
+    {
+        "class": "align-center",
+        "sass": "@include align('center')",
+        "property": "text-align: center;",
+        "px" : ""
+    },
+    {
+        "class": "align-right",
+        "sass": "@include align('right')",
+        "property": "text-align: right;",
+        "px" : ""
+    }
+
+]

@@ -13,8 +13,22 @@ const showMenu = ref(false)
         <h6>Affino Framework Menu</h6>
 
         <menu :class="{ block: showMenu }">
-            <RouterLink to="/">Typography</RouterLink>
-            <RouterLink to="/font-sizes">Font Sizes</RouterLink>
+            <RouterLink to="/" class="menu-parent">Typography</RouterLink>
+            <RouterLink to="/font-sizes" class="menu-child">
+                Font Sizes
+            </RouterLink>
+            <RouterLink to="/font-weights" class="menu-child">
+                Font Weights
+            </RouterLink>
+            <RouterLink to="/letter-spacing" class="menu-child">
+                Letter Spacing
+            </RouterLink>
+            <RouterLink to="/line-height" class="menu-child">
+                Line Height
+            </RouterLink>
+            <RouterLink to="/text-align" class="menu-child">
+                Text Align
+            </RouterLink>
             <RouterLink to="/buttons">Buttons</RouterLink>
             <RouterLink to="/form-elements">Form Elements</RouterLink>
             <RouterLink to="/theme-colors">Theme Colors</RouterLink>
@@ -86,7 +100,20 @@ nav {
             @include fw('500');
             @include tracking('wide');
             @include display('block');
-            @include my('8');
+            @include py('4');
+        }
+
+        .menu-parent {
+            @include fw('600');
+            @include fs('md');
+            color: var(--main-heading-color);
+        }
+        .menu-child {
+            @include pl('14');
+            border-left: 1px solid var(--content-border-color);
+        }
+        .menu-child.router-link-active {
+            border-left: 2px solid var(--primary-color);
         }
     }
 }

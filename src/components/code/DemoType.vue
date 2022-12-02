@@ -21,8 +21,8 @@ const fontSizeClass = computed(() => ({
 </script>
 
 <template>
-    <div class="card flex flex-wrap row-gap-20 h-full">
-        <div class="flex w-full">
+    <div class="card flex-row flex-wrap row-gap-20 h-full">
+        <div class="flex col-12 col-6@lg">
             <div class="w-40 pt-4"><slot name="icon" /></div>
             <div>
                 <component
@@ -35,7 +35,7 @@ const fontSizeClass = computed(() => ({
                 <p class="text-md details"><slot name="details" /></p>
             </div>
         </div>
-        <div class="flex w-full">
+        <div class="flex col-12 col-6@lg">
             <div class="w-40 pt-4"><slot name="iconMobile" /></div>
             <div>
                 <component

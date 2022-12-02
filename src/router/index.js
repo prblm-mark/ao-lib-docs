@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import TypeView from '../views/TypeView.vue'
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHashHistory(),
     routes: [
         {
             path: '/',
@@ -51,6 +51,26 @@ const router = createRouter({
             path: '/font-sizes',
             name: 'font-sizes',
             component: () => import('../views/FontSizeView.vue'),
+        },
+        {
+            path: '/font-weights',
+            name: 'font-weights',
+            component: () => import('../views/FontWeightView.vue'),
+        },
+        {
+            path: '/letter-spacing',
+            name: 'letter-spacing',
+            component: () => import('../views/LetterSpacingView.vue'),
+        },
+        {
+            path: '/line-height',
+            name: 'line-height',
+            component: () => import('../views/LineHeightView.vue'),
+        },
+        {
+            path: '/text-align',
+            name: 'text-align',
+            component: () => import('../views/TextAlignView.vue'),
         },
     ],
 })

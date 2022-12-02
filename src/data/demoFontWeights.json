@@ -1,0 +1,57 @@
+[
+    {
+        "class": "fw-100",
+        "sass": "@include fw('100')",
+        "property": "font-weight: 100;",
+        "px" : ""
+    },
+    {
+        "class": "fw-200",
+        "sass": "@include fw('200')",
+        "property": "font-weight: 200",
+        "px" : ""
+    },
+    {
+        "class": "fw-300",
+        "sass": "@include fw('300')",
+        "property": "font-weight: 300",
+        "px" : ""
+    },
+    {
+        "class": "fw-400",
+        "sass": "@include fw('400')",
+        "property": "font-weight: 400",
+        "px" : ""
+    },
+    {
+        "class": "fw-500",
+        "sass": "@include fw('500')",
+        "property": "font-weight: 500",
+        "px" : ""
+    },
+    {
+        "class": "fw-600",
+        "sass": "@include fw('600')",
+        "property": "font-weight: 600",
+        "px" : ""
+    },
+    {
+        "class": "fw-700",
+        "sass": "@include fw('700')",
+        "property": "font-weight: 700",
+        "px" : ""
+    },
+    {
+        "class": "fw-800",
+        "sass": "@include fw('800')",
+        "property": "font-weight: 800",
+        "px" : ""
+    },
+    {
+        "class": "fw-900",
+        "sass": "@include fw('900')",
+        "property": "font-weight: 900",
+        "px" : ""
+    }
+
+]

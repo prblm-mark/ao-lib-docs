@@ -54,6 +54,7 @@ window.addEventListener('DOMContentLoaded', load)
     border-radius: 0.375rem;
     position: relative;
     @include w('full');
+    @include h('full');
     @include p('18');
     @include fw('400');
     @include fs('xs');

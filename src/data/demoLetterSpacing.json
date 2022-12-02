@@ -1,0 +1,38 @@
+[{
+        "class": "tracking-tighter",
+        "sass": "@include tracking('tighter')",
+        "property": "letter-spacing: -0.05em;",
+        "px" : ""
+    },
+    {
+        "class": "tracking-tight",
+        "sass": "@include tracking('tight')",
+        "property": "letter-spacing: -0.025em;",
+        "px" : ""
+    },
+    {
+        "class": "tracking-normal",
+        "sass": "@include tracking('normal')",
+        "property": "letter-spacing: 0em;",
+        "px" : ""
+    },
+    {
+        "class": "tracking-wide",
+        "sass": "@include tracking('wide')",
+        "property": "letter-spacing: 0.025em;",
+        "px" : ""
+    },
+    {
+        "class": "tracking-wider",
+        "sass": "@include tracking('wider')",
+        "property": "letter-spacing: 0.05em;",
+        "px" : ""
+    },
+    {
+        "class": "tracking-widest",
+        "sass": "@include tracking('widest')",
+        "property": "letter-spacing: 0.1em;",
+        "px" : ""
+    }
+
+]
