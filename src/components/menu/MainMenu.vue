@@ -13,29 +13,28 @@ const showMenu = ref(false)
         <h6>Affino Framework Menu</h6>
 
         <menu :class="{ block: showMenu }">
-            <RouterLink to="/" class="menu-parent">Typography</RouterLink>
-            <RouterLink to="/font-sizes" class="menu-child">
-                Font Sizes
-            </RouterLink>
-            <RouterLink to="/font-weights" class="menu-child">
-                Font Weights
-            </RouterLink>
-            <RouterLink to="/letter-spacing" class="menu-child">
-                Letter Spacing
-            </RouterLink>
-            <RouterLink to="/line-height" class="menu-child">
-                Line Height
-            </RouterLink>
-            <RouterLink to="/text-align" class="menu-child">
-                Text Align
-            </RouterLink>
-            <RouterLink to="/buttons">Buttons</RouterLink>
-            <RouterLink to="/form-elements">Form Elements</RouterLink>
+            <h4>Typography</h4>
+            <RouterLink to="/"> Headings & Text </RouterLink>
+            <RouterLink to="/font-sizes"> Font Sizes </RouterLink>
+            <RouterLink to="/font-weights"> Font Weights </RouterLink>
+            <RouterLink to="/letter-spacing"> Letter Spacing </RouterLink>
+            <RouterLink to="/line-height"> Line Height </RouterLink>
+            <RouterLink to="/text-align"> Text Align </RouterLink>
+
+            <h4>Colors</h4>
             <RouterLink to="/theme-colors">Theme Colors</RouterLink>
+
+            <h4>Components</h4>
+            <RouterLink to="/buttons">Buttons</RouterLink>
             <RouterLink to="/cards">Cards</RouterLink>
+            <RouterLink to="/filters">Filter Panel</RouterLink>
+
+            <h4>Forms</h4>
+            <RouterLink to="/form-elements">Form Elements</RouterLink>
+
+            <h4>Layout</h4>
             <RouterLink to="/flex-columns">Flex Columns</RouterLink>
             <RouterLink to="/grid">Grid</RouterLink>
-            <RouterLink to="/filters">Filter Panel</RouterLink>
         </menu>
     </nav>
 </template>
@@ -73,10 +72,6 @@ nav {
     h6 {
         color: var(--main-heading-color);
         @include fw('600');
-
-        @include lg {
-            @include mb('14');
-        }
     }
 
     menu {
@@ -95,25 +90,29 @@ nav {
 
         a {
             color: var(--content-text-color);
+            border-left: 1px solid var(--content-border-color);
             @include w('full');
             @include fs('xs');
             @include fw('500');
             @include tracking('wide');
             @include display('block');
             @include py('4');
+            @include pl('14');
+
+            &:hover {
+                color: var(--primary-active-color);
+            }
+        }
+        .router-link-active {
+            border-left: 2px solid var(--primary-color);
         }
 
-        .menu-parent {
+        h4 {
             @include fw('600');
             @include fs('md');
+            @include mt('14');
+            @include mb('8');
             color: var(--main-heading-color);
-        }
-        .menu-child {
-            @include pl('14');
-            border-left: 1px solid var(--content-border-color);
-        }
-        .menu-child.router-link-active {
-            border-left: 2px solid var(--primary-color);
         }
     }
 }

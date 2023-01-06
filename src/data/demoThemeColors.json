@@ -1,0 +1,128 @@
+[
+    {
+        "name": "Page Background",
+        "color": "var(--page-bg-color)",
+        "border": ""
+    },
+    {
+        "name": "Content Background",
+        "color": "var(--content-bg-color)",
+        "border": "1px solid var(--content-border-color)"
+    },
+    {
+        "name": "Content Border",
+        "color": "var(--content-border-color)",
+        "border": ""
+    },
+    {
+        "name": "Content Text",
+        "color": "var(--content-text-color)",
+        "border": ""
+    },
+    {
+        "name": "Content Title",
+        "color": "var(--content-title-color)",
+        "border": ""
+    },
+    {
+        "name": "Main Heading",
+        "color": "var(--main-heading-color)",
+        "border": ""
+    },
+    {
+        "name": "Sub Heading",
+        "color": "var(--sub-heading-color)",
+        "border": ""
+    },
+    {
+        "name": "Dark Surface Bg",
+        "color": "var(--dark-surface-bg-color)",
+        "border": ""
+    },
+    {
+        "name": "Darker Surface Bg",
+        "color": "var(--darker-surface-bg-color)",
+        "border": "1px solid var(--content-border-color)"
+    },
+    {
+        "name": "Action Panel",
+        "color": "var(--action-panel-color)",
+        "border": "1px solid var(--content-border-color)"
+    },
+    {
+        "name": "Primary",
+        "color": "var(--primary-color)",
+        "border": ""
+    },
+    {
+        "name": "Primary Active",
+        "color": "var(--primary-active-color)",
+        "border": ""
+    },
+    {
+        "name": "Primary Text",
+        "color": "var(--primary-text-color)",
+        "border": "1px solid var(--content-border-color)"
+    },
+    {
+        "name": "Secondary",
+        "color": "var(--secondary-color)",
+        "border": ""
+    },
+    {
+        "name": "Secondary Active",
+        "color": "var(--secondary-active-color)",
+        "border": ""
+    },
+    {
+        "name": "Secondary Text",
+        "color": "var(--secondary-text-color)",
+        "border": ""
+    },
+    {
+        "name": "Tertiary",
+        "color": "var(--tertiary-color)",
+        "border": ""
+    },
+    {
+        "name": "Tertiary Active",
+        "color": "var(--tertiary-active-color)",
+        "border": ""
+    },
+    {
+        "name": "Tertiary Text",
+        "color": "var(--tertiary-text-color)",
+        "border": "1px solid var(--content-border-color)"
+    },
+    {
+        "name": "Error",
+        "color": "var(--error-color)",
+        "border": ""
+    },
+    {
+        "name": "Focus",
+        "color": "var(--focus-color)",
+        "border": ""
+    },
+    {
+        "name": "Table Heading",
+        "color": "var(--table-heading-color)",
+        "border": ""
+    },
+    {
+        "name": "Input Border",
+        "color": "var(--input-border-color)",
+        "border": ""
+    },
+    {
+        "name": "Input Background",
+        "color": "var(--input-background-color)",
+        "border": "1px solid var(--content-border-color)"
+    },
+    {
+        "name": "Filters Background",
+        "color": "var(--filters-bg-color)",
+        "border": "1px solid var(--content-border-color)"
+    }
+
+]

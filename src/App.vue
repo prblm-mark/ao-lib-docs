@@ -103,6 +103,7 @@ window.addEventListener('DOMContentLoaded', load)
     color: var(--main-heading-color);
     background-color: getColor('mid-blue', 300);
     border-radius: 0.25rem;
+    white-space: nowrap;
     @include fw('500');
     @include fs('xxs');
     @include py('2');
