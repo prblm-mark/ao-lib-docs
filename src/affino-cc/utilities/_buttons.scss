@@ -2,84 +2,7 @@
 @use '../abstracts/' as *;
 @use '../components/' as *;
 
-.btn-primary {
-    @include btn(var(--primary-color));
-    color: var(--primary-text-color);
-    &:hover,
-    &:focus {
-        background-color: var(--primary-active-color);
-    }
 
-    .btn-icon-left {
-        @include btn-icon-left;
-    }
-
-    .btn-icon-right {
-        @include btn-icon-right;
-    }
-    
-}
-
-/* -------------------------------- Secondary ------------------------------- */
-.btn-secondary {
-    @include btn(transparent);
-    color: var(--secondary-text-color);
-    box-shadow: inset 0 0 0 1px var(--secondary-color);
-    &:hover,
-    &:focus {
-        color: var(--content-bg-color);
-        background-color: var(--secondary-color);
-    }
-
-    .btn-icon-left {
-        @include btn-icon-left;
-    }
-
-    .btn-icon-right {
-        @include btn-icon-right;
-    }
-}
-
-/* -------------------------------- Tertiary -------------------------------- */
-.btn-tertiary {
-    @include btn(var(--tertiary-color));
-    color: var(--tertiary-text-color);
-    box-shadow: inset 0 0 0 1px $transparent;
-    &:hover,
-    &:focus {
-        background-color: var(--tertiary-active-color);
-    }
-
-    .btn-icon-left {
-        @include btn-icon-left;
-    }
-
-    .btn-icon-right {
-        @include btn-icon-right;
-    }
-}
-
-/* ---------------------------------- Small --------------------------------- */
-
-.btn-lg {
-    @include btn-lg();
-
-    .btn-icon-left {
-        @include btn-lg-icon-left;
-    }
-    .btn-icon-right {
-        @include btn-lg-icon-right;
-    }
-}
-
-.btn-sm {
-    @include btn-sm();
-}
-
-/* ------------------------------- Full Width ------------------------------- */
-.btn-full {
-    @include w('full');
-}
 
 // Loop through all breakpoints
 @each $screen-size, $breakpoint in $breakpoints {
@@ -159,4 +82,85 @@
             }
         }
     }
+}
+
+// Need to move utilities below loop
+
+.btn-primary {
+    @include btn(var(--primary-color));
+    color: var(--primary-text-color);
+    &:hover,
+    &:focus {
+        background-color: var(--primary-active-color);
+    }
+
+    .btn-icon-left {
+        @include btn-icon-left;
+    }
+
+    .btn-icon-right {
+        @include btn-icon-right;
+    }
+    
+}
+
+/* -------------------------------- Secondary ------------------------------- */
+.btn-secondary {
+    @include btn(transparent);
+    color: var(--secondary-text-color);
+    box-shadow: inset 0 0 0 1px var(--secondary-color);
+    &:hover,
+    &:focus {
+        color: var(--content-bg-color);
+        background-color: var(--secondary-color);
+    }
+
+    .btn-icon-left {
+        @include btn-icon-left;
+    }
+
+    .btn-icon-right {
+        @include btn-icon-right;
+    }
+}
+
+/* -------------------------------- Tertiary -------------------------------- */
+.btn-tertiary {
+    @include btn(var(--tertiary-color));
+    color: var(--tertiary-text-color);
+    box-shadow: inset 0 0 0 1px $transparent;
+    &:hover,
+    &:focus {
+        background-color: var(--tertiary-active-color);
+    }
+
+    .btn-icon-left {
+        @include btn-icon-left;
+    }
+
+    .btn-icon-right {
+        @include btn-icon-right;
+    }
+}
+
+/* ---------------------------------- Small --------------------------------- */
+
+.btn-lg {
+    @include btn-lg();
+
+    .btn-icon-left {
+        @include btn-lg-icon-left;
+    }
+    .btn-icon-right {
+        @include btn-lg-icon-right;
+    }
+}
+
+.btn-sm {
+    @include btn-sm();
+}
+
+/* ------------------------------- Full Width ------------------------------- */
+.btn-full {
+    @include w('full');
 }

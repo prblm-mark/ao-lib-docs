@@ -30,6 +30,41 @@
 
 }
 
+// Need to add these mixins
+
+// Primary Button
+@mixin btn-primary() {
+  @include btn(var(--primary-color));
+  color: var(--primary-text-color);
+  &:hover,
+  &:focus {
+      background-color: var(--primary-active-color);
+  }
+}
+
+// Secondary Button
+@mixin btn-secondary() {
+  @include btn(transparent);
+  color: var(--secondary-text-color);
+  box-shadow: inset 0 0 0 1px var(--secondary-color);
+  &:hover,
+  &:focus {
+      color: var(--content-bg-color);
+      background-color: var(--secondary-color);
+  }
+}
+
+// Tertiary Button
+@mixin btn-tertiary() {
+  @include btn(var(--tertiary-color));
+  color: var(--tertiary-text-color);
+  box-shadow: inset 0 0 0 1px $transparent;
+  &:hover,
+  &:focus {
+      background-color: var(--tertiary-active-color);
+  }
+}
+
 // Large Button
 @mixin btn-lg() {
   @include fs("sm");
