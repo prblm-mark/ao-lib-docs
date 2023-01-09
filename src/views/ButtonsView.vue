@@ -4,10 +4,8 @@ import SecondaryButton from '@/components/buttons/SecondaryButton.vue'
 import TertiaryButton from '@/components/buttons/TertiaryButton.vue'
 import IconSmChevronLeft from '@/components/icons/IconSmChevronLeft.vue'
 import IconSmChevronDown from '@/components/icons/IconSmChevronDown.vue'
-import IconCircleArrowDown from '@/components/icons/IconCircleArrowDown.vue'
 import IconCircleArrowRight from '@/components/icons/IconCircleArrowRight.vue'
 import IconSmCircleArrowDown from '@/components/icons/IconSmCircleArrowDown.vue'
-import IconSmCircleArrowRight from '@/components/icons/IconSmCircleArrowRight.vue'
 import SnippetHTML from '../components/code/SnippetHTML.vue'
 import SnippetSASS from '../components/code/SnippetSASS.vue'
 </script>
@@ -260,6 +258,37 @@ import SnippetSASS from '../components/code/SnippetSASS.vue'
                 <SnippetSASS>
                     <template #syntax>@include</template>
                     btn-icon-right()
+                </SnippetSASS>
+            </div>
+        </div>
+
+        <h4 class="mt-44 heading-border">Custom Colours</h4>
+        <p class="mb-32 mt-6 text-md leading-relaxed">
+            Custom colours can be applied to a button, but
+            <strong>note</strong> these are fixed across both light and dark
+            theme. The hover colour is a sass function which darkens the
+            specified colour. In addition you will need to add your preferred
+            text colour, as this utility only styles the button with a
+            background colour.
+            <strong>See the colours section for more info.</strong>
+        </p>
+        <div class="flex mb-sm">
+            <div class="btn-red-500 text-white">Custom Button</div>
+        </div>
+        <div class="flex-row mt-40 mb-40">
+            <div class="col-12 col-6@lg pr-10@lg">
+                <SnippetHTML class="h-full">
+                    <template #tag>div</template>
+                    <template #class>btn-red-500</template>
+                    Some text here...
+                </SnippetHTML>
+            </div>
+            <div
+                class="col-12 col-6@lg flex flex-wrap mt-20 mt-0@lg pl-10@lg row-gap-20"
+            >
+                <SnippetSASS>
+                    <template #syntax>@include</template>
+                    btn(getColor('red', 500))
                 </SnippetSASS>
             </div>
         </div>
