@@ -34,6 +34,22 @@ const handleChange = (e) => {
     <div class="w-full">
         <h3 class="heading-border">Form Elements</h3>
 
+        <p class="mb-28 mt-6 text-md leading-relaxed">
+            Form elements are applied by assigning the
+            <span class="code-highlight">.form-field</span> class to an element.
+            The styling for each input is defined by the type attribute i.e<span
+                class="code-highlight"
+                >type="text"</span
+            >
+            . The only unique cases are the <strong>Radio</strong>,<span
+                class="code-highlight"
+                >.form-radio</span
+            >
+            and <strong>Checkbox</strong>
+            <span class="code-highlight">.form-checkbox</span>where you need to
+            add the additional class.
+        </p>
+
         <div class="card">
             <div class="flex-row flex-gap-8">
                 <div class="col-12 col-6@md col-4@lg">

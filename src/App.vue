@@ -1,11 +1,11 @@
 <script setup>
 import { RouterView } from 'vue-router'
-
+import { ref, provide } from 'vue'
 import PrimaryButton from './components/buttons/PrimaryButton.vue'
-
 import MainMenu from './components/menu/MainMenu.vue'
 
-// import HelloWorld from "./components/HelloWorld.vue";
+let darkMode = ref()
+
 function load() {
     const button = document.querySelector('#mode')
 
@@ -14,6 +14,9 @@ function load() {
 
     // Toggles the "dark-mode" class based on if the media query matches
     function toggleDarkMode(state) {
+        if (state) {
+            darkMode.value = true
+        }
         document.documentElement.classList.toggle('dark-mode', state)
     }
 
@@ -25,11 +28,19 @@ function load() {
 
     // Toggles the "dark-mode" class on click
     button.addEventListener('click', () => {
-        document.documentElement.classList.toggle('dark-mode')
+        const html = document.documentElement
+        if (html.classList.contains('dark-mode')) {
+            html.classList.remove('dark-mode')
+            darkMode.value = false
+        } else {
+            html.classList.add('dark-mode')
+            darkMode.value = true
+        }
     })
 }
 
 window.addEventListener('DOMContentLoaded', load)
+provide('darkMode', darkMode)
 </script>
 
 <template>

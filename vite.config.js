@@ -15,13 +15,9 @@ export default defineConfig({
         preprocessorOptions: {
             scss: {
                 additionalData: `@import "./src/affino-cc/index.scss"; 
+                                 @import "./src/affino-cc/abstracts"; 
                                   @import "./src/affino-cc/components/_buttons.scss"; 
-                                  @import "./src/affino-cc/abstracts/_colors.scss";
-                                  @import "./src/affino-cc/abstracts/_spacing.scss";
-                                  @import "./src/affino-cc/abstracts/_display.scss";
-                                  @import "./src/affino-cc/abstracts/_type.scss";
-                                  @import "./src/affino-cc/abstracts/_breakpoints.scss";
-                                  
+                                  @import "./src/affino-cc/layout";
                                  `,
             },
         },

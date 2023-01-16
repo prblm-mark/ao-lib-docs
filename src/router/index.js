@@ -1,20 +1,17 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import TypeView from '../views/TypeView.vue'
+import ColorPaletteView from '../views/ColorPaletteView.vue'
 
 const router = createRouter({
     history: createWebHashHistory(),
     routes: [
         {
             path: '/',
-            name: 'type',
-            component: TypeView,
+            name: 'color-palette',
+            component: ColorPaletteView,
         },
         {
             path: '/buttons',
             name: 'buttons',
-            // route level code-splitting
-            // this generates a separate chunk (About.[hash].js) for this route
-            // which is lazy-loaded when the route is visited.
             component: () => import('../views/ButtonsView.vue'),
         },
         {
@@ -26,6 +23,11 @@ const router = createRouter({
             path: '/theme-colors',
             name: 'theme-colors',
             component: () => import('../views/ColorsView.vue'),
+        },
+        {
+            path: '/typography',
+            name: 'typography',
+            component: () => import('../views/TypeView.vue'),
         },
         {
             path: '/cards',

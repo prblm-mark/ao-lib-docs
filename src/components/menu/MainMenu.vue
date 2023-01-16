@@ -13,21 +13,22 @@ const showMenu = ref(false)
         <h6>Affino Framework Menu</h6>
 
         <menu :class="{ block: showMenu }">
+            <h4>Colors</h4>
+            <RouterLink to="/">Color Palette</RouterLink>
+            <RouterLink to="/theme-colors">Theme Colors</RouterLink>
+
             <h4>Typography</h4>
-            <RouterLink to="/"> Headings & Text </RouterLink>
+            <RouterLink to="/typography"> Headings & Text </RouterLink>
             <RouterLink to="/font-sizes"> Font Sizes </RouterLink>
             <RouterLink to="/font-weights"> Font Weights </RouterLink>
             <RouterLink to="/letter-spacing"> Letter Spacing </RouterLink>
             <RouterLink to="/line-height"> Line Height </RouterLink>
             <RouterLink to="/text-align"> Text Align </RouterLink>
 
-            <h4>Colors</h4>
-            <RouterLink to="/theme-colors">Theme Colors</RouterLink>
-
             <h4>Components</h4>
             <RouterLink to="/buttons">Buttons</RouterLink>
             <RouterLink to="/cards">Cards</RouterLink>
-            <RouterLink to="/filters">Filter Panel</RouterLink>
+            <!-- <RouterLink to="/filters">Filter Panel</RouterLink> -->
 
             <h4>Forms</h4>
             <RouterLink to="/form-elements">Form Elements</RouterLink>

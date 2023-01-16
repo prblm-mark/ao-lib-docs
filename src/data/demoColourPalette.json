@@ -1,0 +1,191 @@
+ [
+    {
+        "name": "Dark Blue",
+        "references": [
+            "#f2f4f5",
+            "#e5e9eb",
+            "#ccd4d8",
+            "#99aab1",
+            "#667f89",
+            "#335562",
+            "#002a3b",
+            "#00222f",
+            "#001923"
+        ],
+        "darkTheme": false
+    },
+    {
+        "name": "Mid Blue",
+        "references": [
+            "#f3f6f7",
+            "#e7edf0",
+            "#d0dbe1",
+            "#a1b7c3",
+            "#7192a4",
+            "#426e86",
+            "#134a68",
+            "#0f3b53",
+            "#0b2c3e"
+        ],
+        "darkTheme": false
+    },
+    {
+        "name": "Slate",
+        "references": [
+            "#f1f5f9",
+            "#e2e8f0",
+            "#cbd5e1",
+            "#94a3b8",
+            "#64748b",
+            "#475569",
+            "#334155",
+            "#1e293b",
+            "#0f172a"
+        ],
+        "darkTheme": true
+    },
+    {
+        "name": "Teal",
+        "references": [
+            "#f2f8f9",
+            "#e5f1f3",
+            "#cce3e8",
+            "#99c8d1",
+            "#66acbb",
+            "#3391a4",
+            "#00758d",
+            "#005e71",
+            "#004655"
+        ]
+
+        
+    },
+    {
+        "name": "Light Blue",
+        "references": [
+            "#f2fbfc",
+            "#e5f7f8",
+            "#cceff2",
+            "#99dfe5",
+            "#66cfd8",
+            "#33bfcb",
+            "#00afbe",
+            "#008c98",
+            "#006972"
+        ]
+    },
+    {
+        "name": "Aqua",
+        "references": [
+            "#f2faf9",
+            "#e5f5f4",
+            "#ccebe9",
+            "#99d8d3",
+            "#66c4be",
+            "#33b1a8",
+            "#009d92",
+            "#007e75",
+            "#005e58"
+        ]
+    },
+    {
+        "name": "Green",
+        "references": [
+            "#f4faf8",
+            "#e8f6f1",
+            "#d3ede3",
+            "#a7dbc7",
+            "#7ac9ab",
+            "#4eb78f",
+            "#22a573",
+            "#1b845c",
+            "#146345"
+        ]
+    },
+    {
+        "name": "Indigo",
+        "references": [
+            "#E0E7FF",
+            "#C7D2FE",
+            "#A5B4FC",
+            "#818CF8",
+            "#6366F1",
+            "#4F46E5",
+            "#4338CA",
+            "#3730A3",
+            "#312E81"
+        ]
+    },
+    {
+        "name": "Violet",
+        "references": [
+            "#EDE9FE",
+            "#DDD6FE",
+            "#C4B5FD",
+            "#A78BFA",
+            "#8B5CF6",
+            "#7C3AED",
+            "#6D28D9",
+            "#5B21B6",
+            "#4C1D95"
+        ]
+    },
+    {
+        "name": "Purple",
+        "references": [
+            "#f3e8ff",
+            "#e9d5ff",
+            "#d8b4fe",
+            "#c084fc",
+            "#a855f7",
+            "#9333ea",
+            "#7e22ce",
+            "#6b21a8",
+            "#581c87"
+        ]
+    },
+    {
+        "name": "Magenta",
+        "references": [
+            "#fae8ff",
+            "#f5d0fe",
+            "#f0abfc",
+            "#e879f9",
+            "#d946ef",
+            "#c026d3",
+            "#a21caf",
+            "#86198f",
+            "#701a75"
+        ]
+    },
+    {
+        "name": "Pink",
+        "references": [
+            "#fce7f3",
+            "#fbcfe8",
+            "#f9a8d4",
+            "#f472b6",
+            "#ec4899",
+            "#db2777",
+            "#be185d",
+            "#9d174d",
+            "#831843"
+        ]
+    },
+    {
+        "name": "Orange",
+        "references": [
+            "#FFEDD5",
+            "#FED7AA",
+            "#FDBA74",
+            "#FB923C",
+            "#F97316",
+            "#EA580C",
+            "#C2410C",
+            "#9A3412",
+            "#7C2D12"
+        ]
+    }
+]
+
+
