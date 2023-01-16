@@ -10,7 +10,7 @@ const showMenu = ref(false)
         <div @click="showMenu = !showMenu" class="h-24 w-24 mr-10">
             <IconMenu :showMenu="showMenu" />
         </div>
-        <h6>Affino Framework Menu</h6>
+        <h6 :showMenu="showMenu">Menu</h6>
 
         <menu :class="{ block: showMenu }">
             <h4>Colors</h4>
@@ -25,6 +25,10 @@ const showMenu = ref(false)
             <RouterLink to="/line-height"> Line Height </RouterLink>
             <RouterLink to="/text-align"> Text Align </RouterLink>
 
+            <h4>Layout</h4>
+            <RouterLink to="/grid">Grid</RouterLink>
+            <RouterLink to="/flex-columns">Flex Columns</RouterLink>
+
             <h4>Components</h4>
             <RouterLink to="/buttons">Buttons</RouterLink>
             <RouterLink to="/cards">Cards</RouterLink>
@@ -32,10 +36,6 @@ const showMenu = ref(false)
 
             <h4>Forms</h4>
             <RouterLink to="/form-elements">Form Elements</RouterLink>
-
-            <h4>Layout</h4>
-            <RouterLink to="/flex-columns">Flex Columns</RouterLink>
-            <RouterLink to="/grid">Grid</RouterLink>
         </menu>
     </nav>
 </template>
@@ -73,6 +73,9 @@ nav {
     h6 {
         color: var(--main-heading-color);
         @include fw('600');
+        @include lg {
+            @include display('hidden');
+        }
     }
 
     menu {

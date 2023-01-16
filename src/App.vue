@@ -3,6 +3,7 @@ import { RouterView } from 'vue-router'
 import { ref, provide } from 'vue'
 import PrimaryButton from './components/buttons/PrimaryButton.vue'
 import MainMenu from './components/menu/MainMenu.vue'
+import AffinoLogo from '@/assets/AffinoLogo.vue'
 
 let darkMode = ref()
 
@@ -44,8 +45,9 @@ provide('darkMode', darkMode)
 </script>
 
 <template>
-    <div class="container pt-lg">
-        <div class="flex justify-end">
+    <div class="container pt-md">
+        <div class="flex justify-between items-center header">
+            <RouterLink to="/"><AffinoLogo /></RouterLink>
             <PrimaryButton large id="mode">Toggle Theme</PrimaryButton>
         </div>
     </div>
@@ -58,6 +60,17 @@ provide('darkMode', darkMode)
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap');
+
+.header {
+    @include lg {
+        border-bottom: 1px dotted var(--content-border-color);
+        @include pb('md');
+        @include mb('xl');
+    }
+    svg {
+        color: var(--content-text-color);
+    }
+}
 
 .code {
     font-family: 'Fira Mono', monospace;
