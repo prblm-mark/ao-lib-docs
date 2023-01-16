@@ -8,7 +8,7 @@ import SecondaryButton from '../components/buttons/SecondaryButton.vue'
 
 <template>
     <div class="w-full">
-        <h3 class="heading-border">Grid</h3>
+        <h1 class="heading-border">Grid</h1>
 
         <p>
             The grid system utility is primarily just to enable the creation of
