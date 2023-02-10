@@ -5,10 +5,17 @@ import demoBorderLeft from '../data/demoBorderLeft.json'
 import demoBorderTop from '../data/demoBorderTop.json'
 import demoBorderRight from '../data/demoBorderRight.json'
 import demoBorderBottom from '../data/demoBorderBottom.json'
+import demoBorderStyle from '../data/demoBorderStyle.json'
+import demoBorderLeftStyle from '../data/demoBorderLeftStyle.json'
+import demoBorderRightStyle from '../data/demoBorderRightStyle.json'
+import demoBorderTopStyle from '../data/demoBorderTopStyle.json'
+import demoBorderBottomStyle from '../data/demoBorderBottomStyle.json'
+import demoBorderColor from '../data/demoBorderColor.json'
+import demoBorderRadius from '../data/demoBorderRadius.json'
 </script>
 
 <template>
-    <div class="w-full">
+    <div class="w-full mb-40">
         <h1 class="heading-border">Borders</h1>
 
         <p class="mb-28">
@@ -46,20 +53,12 @@ import demoBorderBottom from '../data/demoBorderBottom.json'
         <BasicTable :tableData="demoBorderBottomStyle" />
 
         <h2 class="mt-44 heading-border">Border Color</h2>
-        <p class="text-md mb-28">Utilities for controlling the border color.</p>
+        <p class="text-md mb-28">
+            Utilities for controlling the border color. The
+            <span class="code-highlight">xxx</span> should be replaced by any
+            color from the full color palette.
+        </p>
         <BasicTable :tableData="demoBorderColor" />
-
-        <h4 class="mt-44 heading-border">Border Left Color</h4>
-        <BasicTable :tableData="demoBorderLeftColor" />
-
-        <h4 class="mt-44 heading-border">Border Top Color</h4>
-        <BasicTable :tableData="demoBorderTopColor" />
-
-        <h4 class="mt-44 heading-border">Border Right Color</h4>
-        <BasicTable :tableData="demoBorderRightColor" />
-
-        <h4 class="mt-44 heading-border">Border Bottom Color</h4>
-        <BasicTable :tableData="demoBorderBottomColor" />
 
         <h2 class="mt-44 heading-border">Border Radius</h2>
         <p class="text-md mb-28">

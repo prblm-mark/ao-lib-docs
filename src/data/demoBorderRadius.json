@@ -1,0 +1,58 @@
+[
+    {
+        "class": "rounded-none",
+        "sass": "@include rounded('0')",
+        "property": "border-radius: 0",
+        "px" : ""
+    },
+    {
+        "class": "rounded-xs",
+        "sass": "@include rounded('xs')",
+        "property": "border-radius: 0.125rem",
+        "px" : "/* 2px */"
+    },
+    {
+        "class": "rounded-sm",
+        "sass": "@include rounded('sm')",
+        "property": "border-radius: 0.25rem",
+        "px" : "/* 4px */"
+    },
+    {
+        "class": "rounded-md",
+        "sass": "@include rounded('md')",
+        "property": "border-radius: 0.375rem",
+        "px" : "/* 6px */"
+    },
+    {
+        "class": "rounded-lg",
+        "sass": "@include rounded('lg')",
+        "property": "border-radius: 0.5rem",
+        "px" : "/* 8px */"
+    },
+    {
+        "class": "rounded-xl",
+        "sass": "@include rounded('xl')",
+        "property": "border-radius: 0.75rem",
+        "px" : "/* 12px */"
+    },
+    {
+        "class": "rounded-2xl",
+        "sass": "@include rounded('2xl')",
+        "property": "border-radius: 1rem",
+        "px" : "/* 16px */"
+    },
+    {
+        "class": "rounded-3xl",
+        "sass": "@include rounded('3xl')",
+        "property": "border-radius: 1.125rem",
+        "px" : "/* 18px */"
+    },
+    {
+        "class": "rounded-full",
+        "sass": "@include rounded('full')",
+        "property": "border-radius: 9999px",
+        "px" : ""
+    }
+   
+
+]

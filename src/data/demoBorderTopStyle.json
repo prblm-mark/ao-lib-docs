@@ -1,0 +1,27 @@
+[
+    {
+        "class": "border-top-style-none",
+        "sass": "@include border-top-style('none')",
+        "property": "border-top-style: none",
+        "px" : ""
+    },
+    {
+        "class": "border-top-style-solid",
+        "sass": "@include border-top-style('solid')",
+        "property": "border-top-style: solid",
+        "px" : ""
+    },
+    {
+        "class": "border-top-style-dotted",
+        "sass": "@include border-top-style('dotted')",
+        "property": "border-top-style: dotted",
+        "px" : ""
+    },
+    {
+        "class": "border-top-style-dashed",
+        "sass": "@include border-top-style('dashed')",
+        "property": "border-top-style: dashed",
+        "px" : ""
+    }
+
+]

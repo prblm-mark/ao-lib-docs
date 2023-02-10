@@ -1,0 +1,33 @@
+[
+    {
+        "class": "border-color-xxx",
+        "sass": "@include border-color('xxx')",
+        "property": "border-color: xxx",
+        "px" : ""
+    },
+    {
+        "class": "border-color-l-xxx",
+        "sass": "@include border-color-l('xxx')",
+        "property": "border-left-color: xxx",
+        "px" : ""
+    },
+    {
+        "class": "border-color-t-xxx",
+        "sass": "@include border-color-t('xxx')",
+        "property": "border-top-color: xxx",
+        "px" : ""
+    },
+    {
+        "class": "border-color-r-xxx",
+        "sass": "@include border-color-r('xxx')",
+        "property": "border-right-color: xxx",
+        "px" : ""
+    },
+    {
+        "class": "border-color-b-xxx",
+        "sass": "@include border-color-b('xxx')",
+        "property": "border-bottom-color: xxx",
+        "px" : ""
+    }
+
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "class": "border-left-style-none",
+        "sass": "@include border-left-style('none')",
+        "property": "border-left-style: none",
+        "px" : ""
+    },
+    {
+        "class": "border-left-style-solid",
+        "sass": "@include border-left-style('solid')",
+        "property": "border-left-style: solid",
+        "px" : ""
+    },
+    {
+        "class": "border-left-style-dotted",
+        "sass": "@include border-left-style('dotted')",
+        "property": "border-left-style: dotted",
+        "px" : ""
+    },
+    {
+        "class": "border-left-style-dashed",
+        "sass": "@include border-left-style('dashed')",
+        "property": "border-left-style: dashed",
+        "px" : ""
+    }
+
+]

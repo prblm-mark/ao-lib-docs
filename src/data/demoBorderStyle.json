@@ -1,0 +1,27 @@
+[
+    {
+        "class": "border-style-none",
+        "sass": "@include border-style('none')",
+        "property": "border-style: none",
+        "px" : ""
+    },
+    {
+        "class": "border-style-solid",
+        "sass": "@include border-style('solid')",
+        "property": "border-style: solid",
+        "px" : ""
+    },
+    {
+        "class": "border-style-dotted",
+        "sass": "@include border-style('dotted')",
+        "property": "border-style: dotted",
+        "px" : ""
+    },
+    {
+        "class": "border-style-dashed",
+        "sass": "@include border-style('dashed')",
+        "property": "border-style: dashed",
+        "px" : ""
+    }
+
+]
