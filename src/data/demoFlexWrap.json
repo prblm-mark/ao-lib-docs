@@ -1,0 +1,14 @@
+[
+    {
+        "class": "flex-wrap",
+        "sass": "@include flex('wrap')",
+        "property": "flex-wrap: wrap",
+        "px" : ""
+    },
+    {
+        "class": "flex-nowrap",
+        "sass": "@include flex('nowrap')",
+        "property": "flex-wrap: nowrap",
+        "px" : ""
+    }
+]

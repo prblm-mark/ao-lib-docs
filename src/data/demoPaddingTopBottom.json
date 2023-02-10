@@ -1,0 +1,238 @@
+[
+    {
+        "class": "py-0",
+        "sass": "@include py('0')",
+        "property": "padding-top: 0, padding-bottom: 0",
+        "px" : ""
+    },
+    {
+        "class": "py-px",
+        "sass": "@include py('px')",
+        "property": "padding-top: 1px, padding-bottom: 1px",
+        "px" : ""
+    },
+    {
+        "class": "py-2",
+        "sass": "@include py('2')",
+        "property": "padding-top: 0.125rem, padding-bottom: 0.125rem",
+        "px" : "/* 2px */"
+    },
+    {
+        "class": "py-4",
+        "sass": "@include py('4')",
+        "property": "padding-top: 0.25rem, padding-bottom: 0.25rem",
+        "px" : "/* 4px */"
+    },
+    {
+        "class": "py-6",
+        "sass": "@include py('6')",
+        "property": "padding-top: 0.375rem, padding-bottom: 0.375rem",
+        "px" : "/* 6px */"
+    },
+    {
+        "class": "py-8",
+        "sass": "@include py('8')",
+        "property": "padding-top: 0.5rem, padding-bottom: 0.5rem",
+        "px" : "/* 8px */"
+    },
+    {
+        "class": "py-10",
+        "sass": "@include py('10')",
+        "property": "padding-top: 0.625rem, padding-bottom: 0.625rem",
+        "px" : "/* 10px */"
+    },
+    {
+        "class": "py-12",
+        "sass": "@include py('12')",
+        "property": "padding-top: 0.75rem, padding-bottom: 0.75rem",
+        "px" : "/* 12px */"
+    },
+    {
+        "class": "py-14",
+        "sass": "@include py('14')",
+        "property": "padding-top: 0.875rem, padding-bottom: 0.875rem",
+        "px" : "/* 14px */"
+    },
+    {
+        "class": "py-16",
+        "sass": "@include py('16')",
+        "property": "padding-top: 1rem, padding-bottom: 1rem",
+        "px" : "/* 16px */"
+    },
+    {
+        "class": "py-18",
+        "sass": "@include py('18')",
+        "property": "padding-top: 1.125rem, padding-bottom: 1.125rem",
+        "px" : "/* 18px */"
+    },
+    {
+        "class": "py-20",
+        "sass": "@include py('20')",
+        "property": "padding-top: 1.25rem, padding-bottom: 1.25rem",
+        "px" : "/* 20px */"
+    },
+    {
+        "class": "py-24",
+        "sass": "@include py('24')",
+        "property": "padding-top: 1.5rem, padding-bottom: 1.5rem",
+        "px" : "/* 24px */"
+    },
+    {
+        "class": "py-28",
+        "sass": "@include py('28')",
+        "property": "padding-top: 1.75rem, padding-bottom: 1.75rem",
+        "px" : "/* 28px */"
+    },
+    {
+        "class": "py-30",
+        "sass": "@include py('30')",
+        "property": "padding-top: 1.875rem, padding-bottom: 1.875rem",
+        "px" : "/* 30px */"
+    },
+    {
+        "class": "py-32",
+        "sass": "@include py('32')",
+        "property": "padding-top: 2rem, padding-bottom: 2rem",
+        "px" : "/* 32px */"
+    },
+    {
+        "class": "py-34",
+        "sass": "@include py('34')",
+        "property": "padding-top: 2.125rem, padding-bottom: 2.125rem",
+        "px" : "/* 34px */"
+    },
+    {
+        "class": "py-36",
+        "sass": "@include py('36')",
+        "property": "padding-top: 2.25rem, padding-bottom: 2.25rem",
+        "px" : "/* 36px */"
+    },
+    {
+        "class": "py-40",
+        "sass": "@include py('40')",
+        "property": "padding-top: 2.5rem, padding-bottom: 2.5rem",
+        "px" : "/* 40px */"
+    },
+    {
+        "class": "py-44",
+        "sass": "@include py('44')",
+        "property": "padding-top: 2.75rem, padding-bottom: 2.75rem",
+        "px" : "/* 44px */"
+    },
+    {
+        "class": "py-xxs",
+        "sass": "@include py('xxs')",
+        "property": "padding-top: 0.25rem, padding-bottom: 0.25rem",
+        "px" : "/* 4px */"
+    },
+    {
+        "class": "py-xs",
+        "sass": "@include py('xs')",
+        "property": "padding-top: 0.5rem, padding-bottom: 0.5rem",
+        "px" : "/* 8px */"
+    },
+    {
+        "class": "py-sm",
+        "sass": "@include py('sm')",
+        "property": "padding-top: 1rem, padding-bottom: 1rem",
+        "px" : "/* 16px */"
+    },
+    {
+        "class": "py-md",
+        "sass": "@include py('md')",
+        "property": "padding-top: 1.5rem, padding-bottom: 1.5rem",
+        "px" : "/* 24px */"
+    },
+    {
+        "class": "py-lg",
+        "sass": "@include py('lg')",
+        "property": "padding-top: 2rem, padding-bottom: 2rem",
+        "px" : "/* 32px */"
+    },
+    {
+        "class": "py-xl",
+        "sass": "@include py('xl')",
+        "property": "padding-top: 3rem, padding-bottom: 3rem",
+        "px" : "/* 48px */"
+    },
+    {
+        "class": "py-2xl",
+        "sass": "@include py('2xl')",
+        "property": "padding-top: 4rem, padding-bottom: 4rem",
+        "px" : "/* 64px */"
+    },
+    {
+        "class": "py-3xl",
+        "sass": "@include py('3xl')",
+        "property": "padding-top: 5rem, padding-bottom: 5rem",
+        "px" : "/* 80px */"
+    },
+    {
+        "class": "py-4xl",
+        "sass": "@include py('4xl')",
+        "property": "padding-top: 6rem, padding-bottom: 6rem",
+        "px" : "/* 96px */"
+    },
+    {
+        "class": "py-5xl",
+        "sass": "@include py('5xl')",
+        "property": "padding-top: 7rem, padding-bottom: 7rem",
+        "px" : "/* 112px */"
+    },
+    {
+        "class": "py-6xl",
+        "sass": "@include py('6xl')",
+        "property": "padding-top: 8rem, padding-bottom: 8rem",
+        "px" : "/* 128px */"
+    },
+    {
+        "class": "py-7xl",
+        "sass": "@include py('7xl')",
+        "property": "padding-top: 9rem, padding-bottom: 9rem",
+        "px" : "/* 144px */"
+    },
+    {
+        "class": "py-8xl",
+        "sass": "@include py('8xl')",
+        "property": "padding-top: 10rem, padding-bottom: 10rem",
+        "px" : "/* 160px */"
+    },
+    {
+        "class": "py-9xl",
+        "sass": "@include py('9xl')",
+        "property": "padding-top: 11rem, padding-bottom: 11rem",
+        "px" : "/* 176px */"
+    },
+    {
+        "class": "py-10xl",
+        "sass": "@include py('10xl')",
+        "property": "padding-top: 12rem, padding-bottom: 12rem",
+        "px" : "/* 192px */"
+    },
+    {
+        "class": "py-vh",
+        "sass": "@include py('vh')",
+        "property": "padding-top: 100vh, padding-bottom: 100vh",
+        "px" : ""
+    },
+    {
+        "class": "py-vw",
+        "sass": "@include py('vw')",
+        "property": "padding-top: 100vw, padding-bottom: 100vw",
+        "px" : ""
+    },
+    {
+        "class": "py-full",
+        "sass": "@include py('full')",
+        "property": "padding-top: 100%, padding-bottom: 100%",
+        "px" : ""
+    },
+    {
+        "class": "py-auto",
+        "sass": "@include py('auto')",
+        "property": "padding-top: auto, padding-bottom: auto",
+        "px" : ""
+    }
+
+
+]

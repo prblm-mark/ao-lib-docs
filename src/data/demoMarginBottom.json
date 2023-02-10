@@ -1,0 +1,238 @@
+[
+    {
+        "class": "mb-0",
+        "sass": "@include mb('0')",
+        "property": "margin-bottom: 0",
+        "px" : ""
+    },
+    {
+        "class": "mb-px",
+        "sass": "@include mb('px')",
+        "property": "margin-bottom: 1px",
+        "px" : ""
+    },
+    {
+        "class": "mb-2",
+        "sass": "@include mb('2')",
+        "property": "margin-bottom: 0.125rem",
+        "px" : "/* 2px */"
+    },
+    {
+        "class": "mb-4",
+        "sass": "@include mb('4')",
+        "property": "margin-bottom: 0.25rem",
+        "px" : "/* 4px */"
+    },
+    {
+        "class": "mb-6",
+        "sass": "@include mb('6')",
+        "property": "margin-bottom: 0.375rem",
+        "px" : "/* 6px */"
+    },
+    {
+        "class": "mb-8",
+        "sass": "@include mb('8')",
+        "property": "margin-bottom: 0.5rem",
+        "px" : "/* 8px */"
+    },
+    {
+        "class": "mb-10",
+        "sass": "@include mb('10')",
+        "property": "margin-bottom: 0.625rem",
+        "px" : "/* 10px */"
+    },
+    {
+        "class": "mb-12",
+        "sass": "@include mb('12')",
+        "property": "margin-bottom: 0.75rem",
+        "px" : "/* 12px */"
+    },
+    {
+        "class": "mb-14",
+        "sass": "@include mb('14')",
+        "property": "margin-bottom: 0.875rem",
+        "px" : "/* 14px */"
+    },
+    {
+        "class": "mb-16",
+        "sass": "@include mb('16')",
+        "property": "margin-bottom: 1rem",
+        "px" : "/* 16px */"
+    },
+    {
+        "class": "mb-18",
+        "sass": "@include mb('18')",
+        "property": "margin-bottom: 1.125rem",
+        "px" : "/* 18px */"
+    },
+    {
+        "class": "mb-20",
+        "sass": "@include mb('20')",
+        "property": "margin-bottom: 1.25rem",
+        "px" : "/* 20px */"
+    },
+    {
+        "class": "mb-24",
+        "sass": "@include mb('24')",
+        "property": "margin-bottom: 1.5rem",
+        "px" : "/* 24px */"
+    },
+    {
+        "class": "mb-28",
+        "sass": "@include mb('28')",
+        "property": "margin-bottom: 1.75rem",
+        "px" : "/* 28px */"
+    },
+    {
+        "class": "mb-30",
+        "sass": "@include mb('30')",
+        "property": "margin-bottom: 1.875rem",
+        "px" : "/* 30px */"
+    },
+    {
+        "class": "mb-32",
+        "sass": "@include mb('32')",
+        "property": "margin-bottom: 2rem",
+        "px" : "/* 32px */"
+    },
+    {
+        "class": "mb-34",
+        "sass": "@include mb('34')",
+        "property": "margin-bottom: 2.125rem",
+        "px" : "/* 34px */"
+    },
+    {
+        "class": "mb-36",
+        "sass": "@include mb('36')",
+        "property": "margin-bottom: 2.25rem",
+        "px" : "/* 36px */"
+    },
+    {
+        "class": "mb-40",
+        "sass": "@include mb('40')",
+        "property": "margin-bottom: 2.5rem",
+        "px" : "/* 40px */"
+    },
+    {
+        "class": "mb-44",
+        "sass": "@include mb('44')",
+        "property": "margin-bottom: 2.75rem",
+        "px" : "/* 44px */"
+    },
+    {
+        "class": "mb-xxs",
+        "sass": "@include mb('xxs')",
+        "property": "margin-bottom: 0.25rem",
+        "px" : "/* 4px */"
+    },
+    {
+        "class": "mb-xs",
+        "sass": "@include mb('xs')",
+        "property": "margin-bottom: 0.5rem",
+        "px" : "/* 8px */"
+    },
+    {
+        "class": "mb-sm",
+        "sass": "@include mb('sm')",
+        "property": "margin-bottom: 1rem",
+        "px" : "/* 16px */"
+    },
+    {
+        "class": "mb-md",
+        "sass": "@include mb('md')",
+        "property": "margin-bottom: 1.5rem",
+        "px" : "/* 24px */"
+    },
+    {
+        "class": "mb-lg",
+        "sass": "@include mb('lg')",
+        "property": "margin-bottom: 2rem",
+        "px" : "/* 32px */"
+    },
+    {
+        "class": "mb-xl",
+        "sass": "@include mb('xl')",
+        "property": "margin-bottom: 3rem",
+        "px" : "/* 48px */"
+    },
+    {
+        "class": "mb-2xl",
+        "sass": "@include mb('2xl')",
+        "property": "margin-bottom: 4rem",
+        "px" : "/* 64px */"
+    },
+    {
+        "class": "mb-3xl",
+        "sass": "@include mb('3xl')",
+        "property": "margin-bottom: 5rem",
+        "px" : "/* 80px */"
+    },
+    {
+        "class": "mb-4xl",
+        "sass": "@include mb('4xl')",
+        "property": "margin-bottom: 6rem",
+        "px" : "/* 96px */"
+    },
+    {
+        "class": "mb-5xl",
+        "sass": "@include mb('5xl')",
+        "property": "margin-bottom: 7rem",
+        "px" : "/* 112px */"
+    },
+    {
+        "class": "mb-6xl",
+        "sass": "@include mb('6xl')",
+        "property": "margin-bottom: 8rem",
+        "px" : "/* 128px */"
+    },
+    {
+        "class": "mb-7xl",
+        "sass": "@include mb('7xl')",
+        "property": "margin-bottom: 9rem",
+        "px" : "/* 144px */"
+    },
+    {
+        "class": "mb-8xl",
+        "sass": "@include mb('8xl')",
+        "property": "margin-bottom: 10rem",
+        "px" : "/* 160px */"
+    },
+    {
+        "class": "mb-9xl",
+        "sass": "@include mb('9xl')",
+        "property": "margin-bottom: 11rem",
+        "px" : "/* 176px */"
+    },
+    {
+        "class": "mb-10xl",
+        "sass": "@include mb('10xl')",
+        "property": "margin-bottom: 12rem",
+        "px" : "/* 192px */"
+    },
+    {
+        "class": "mb-vh",
+        "sass": "@include mb('vh')",
+        "property": "margin-bottom: 100vh",
+        "px" : ""
+    },
+    {
+        "class": "mb-vw",
+        "sass": "@include mb('vw')",
+        "property": "margin-bottom: 100vw",
+        "px" : ""
+    },
+    {
+        "class": "mb-full",
+        "sass": "@include mb('full')",
+        "property": "margin-bottom: 100%",
+        "px" : ""
+    },
+    {
+        "class": "mb-auto",
+        "sass": "@include mb('auto')",
+        "property": "margin-bottom: auto",
+        "px" : ""
+    }
+
+
+]

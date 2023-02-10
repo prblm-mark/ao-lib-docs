@@ -1,0 +1,238 @@
+[
+    {
+        "class": "pr-0",
+        "sass": "@include pr('0')",
+        "property": "padding-right: 0",
+        "px" : ""
+    },
+    {
+        "class": "pr-px",
+        "sass": "@include pr('px')",
+        "property": "padding-right: 1px",
+        "px" : ""
+    },
+    {
+        "class": "pr-2",
+        "sass": "@include pr('2')",
+        "property": "padding-right: 0.125rem",
+        "px" : "/* 2px */"
+    },
+    {
+        "class": "pr-4",
+        "sass": "@include pr('4')",
+        "property": "padding-right: 0.25rem",
+        "px" : "/* 4px */"
+    },
+    {
+        "class": "pr-6",
+        "sass": "@include pr('6')",
+        "property": "padding-right: 0.375rem",
+        "px" : "/* 6px */"
+    },
+    {
+        "class": "pr-8",
+        "sass": "@include pr('8')",
+        "property": "padding-right: 0.5rem",
+        "px" : "/* 8px */"
+    },
+    {
+        "class": "pr-10",
+        "sass": "@include pr('10')",
+        "property": "padding-right: 0.625rem",
+        "px" : "/* 10px */"
+    },
+    {
+        "class": "pr-12",
+        "sass": "@include pr('12')",
+        "property": "padding-right: 0.75rem",
+        "px" : "/* 12px */"
+    },
+    {
+        "class": "pr-14",
+        "sass": "@include pr('14')",
+        "property": "padding-right: 0.875rem",
+        "px" : "/* 14px */"
+    },
+    {
+        "class": "pr-16",
+        "sass": "@include pr('16')",
+        "property": "padding-right: 1rem",
+        "px" : "/* 16px */"
+    },
+    {
+        "class": "pr-18",
+        "sass": "@include pr('18')",
+        "property": "padding-right: 1.125rem",
+        "px" : "/* 18px */"
+    },
+    {
+        "class": "pr-20",
+        "sass": "@include pr('20')",
+        "property": "padding-right: 1.25rem",
+        "px" : "/* 20px */"
+    },
+    {
+        "class": "pr-24",
+        "sass": "@include pr('24')",
+        "property": "padding-right: 1.5rem",
+        "px" : "/* 24px */"
+    },
+    {
+        "class": "pr-28",
+        "sass": "@include pr('28')",
+        "property": "padding-right: 1.75rem",
+        "px" : "/* 28px */"
+    },
+    {
+        "class": "pr-30",
+        "sass": "@include pr('30')",
+        "property": "padding-right: 1.875rem",
+        "px" : "/* 30px */"
+    },
+    {
+        "class": "pr-32",
+        "sass": "@include pr('32')",
+        "property": "padding-right: 2rem",
+        "px" : "/* 32px */"
+    },
+    {
+        "class": "pr-34",
+        "sass": "@include pr('34')",
+        "property": "padding-right: 2.125rem",
+        "px" : "/* 34px */"
+    },
+    {
+        "class": "pr-36",
+        "sass": "@include pr('36')",
+        "property": "padding-right: 2.25rem",
+        "px" : "/* 36px */"
+    },
+    {
+        "class": "pr-40",
+        "sass": "@include pr('40')",
+        "property": "padding-right: 2.5rem",
+        "px" : "/* 40px */"
+    },
+    {
+        "class": "pr-44",
+        "sass": "@include pr('44')",
+        "property": "padding-right: 2.75rem",
+        "px" : "/* 44px */"
+    },
+    {
+        "class": "pr-xxs",
+        "sass": "@include pr('xxs')",
+        "property": "padding-right: 0.25rem",
+        "px" : "/* 4px */"
+    },
+    {
+        "class": "pr-xs",
+        "sass": "@include pr('xs')",
+        "property": "padding-right: 0.5rem",
+        "px" : "/* 8px */"
+    },
+    {
+        "class": "pr-sm",
+        "sass": "@include pr('sm')",
+        "property": "padding-right: 1rem",
+        "px" : "/* 16px */"
+    },
+    {
+        "class": "pr-md",
+        "sass": "@include pr('md')",
+        "property": "padding-right: 1.5rem",
+        "px" : "/* 24px */"
+    },
+    {
+        "class": "pr-lg",
+        "sass": "@include pr('lg')",
+        "property": "padding-right: 2rem",
+        "px" : "/* 32px */"
+    },
+    {
+        "class": "pr-xl",
+        "sass": "@include pr('xl')",
+        "property": "padding-right: 3rem",
+        "px" : "/* 48px */"
+    },
+    {
+        "class": "pr-2xl",
+        "sass": "@include pr('2xl')",
+        "property": "padding-right: 4rem",
+        "px" : "/* 64px */"
+    },
+    {
+        "class": "pr-3xl",
+        "sass": "@include pr('3xl')",
+        "property": "padding-right: 5rem",
+        "px" : "/* 80px */"
+    },
+    {
+        "class": "pr-4xl",
+        "sass": "@include pr('4xl')",
+        "property": "padding-right: 6rem",
+        "px" : "/* 96px */"
+    },
+    {
+        "class": "pr-5xl",
+        "sass": "@include pr('5xl')",
+        "property": "padding-right: 7rem",
+        "px" : "/* 112px */"
+    },
+    {
+        "class": "pr-6xl",
+        "sass": "@include pr('6xl')",
+        "property": "padding-right: 8rem",
+        "px" : "/* 128px */"
+    },
+    {
+        "class": "pr-7xl",
+        "sass": "@include pr('7xl')",
+        "property": "padding-right: 9rem",
+        "px" : "/* 144px */"
+    },
+    {
+        "class": "pr-8xl",
+        "sass": "@include pr('8xl')",
+        "property": "padding-right: 10rem",
+        "px" : "/* 160px */"
+    },
+    {
+        "class": "pr-9xl",
+        "sass": "@include pr('9xl')",
+        "property": "padding-right: 11rem",
+        "px" : "/* 176px */"
+    },
+    {
+        "class": "pr-10xl",
+        "sass": "@include pr('10xl')",
+        "property": "padding-right: 12rem",
+        "px" : "/* 192px */"
+    },
+    {
+        "class": "pr-vh",
+        "sass": "@include pr('vh')",
+        "property": "padding-right: 100vh",
+        "px" : ""
+    },
+    {
+        "class": "pr-vw",
+        "sass": "@include pr('vw')",
+        "property": "padding-right: 100vw",
+        "px" : ""
+    },
+    {
+        "class": "pr-full",
+        "sass": "@include pr('full')",
+        "property": "padding-right: 100%",
+        "px" : ""
+    },
+    {
+        "class": "pr-auto",
+        "sass": "@include pr('auto')",
+        "property": "padding-right: auto",
+        "px" : ""
+    }
+
+
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "class": "hidden",
+        "sass": "@include display('hidden')",
+        "property": "display: none",
+        "px" : ""
+    },
+    {
+        "class": "block",
+        "sass": "@include display('block')",
+        "property": "display: block",
+        "px" : ""
+    },
+    {
+        "class": "flex",
+        "sass": "@include display('flex')",
+        "property": "display: flex",
+        "px" : ""
+    },
+    {
+        "class": "inline-block",
+        "sass": "@include display('inline-block')",
+        "property": "display: inline-block",
+        "px" : ""
+    },
+    {
+        "class": "inline-flex",
+        "sass": "@include display('inline-flex')",
+        "property": "display: inline-flex",
+        "px" : ""
+    },
+    {
+        "class": "inline",
+        "sass": "@include display('inline')",
+        "property": "display: inline",
+        "px" : ""
+    },
+    {
+        "class": "grid",
+        "sass": "@include display('grid')",
+        "property": "display: grid",
+        "px" : ""
+    }
+]

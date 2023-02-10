@@ -1,0 +1,32 @@
+[
+    {
+        "class": "@sm",
+        "sass": "@include sm { ... }",
+        "screen": "sm",
+        "size" : "/* 480px */"
+    },
+    {
+        "class": "@md",
+        "sass": "@include md { ... }",
+        "screen": "md",
+        "size" : "/* 720px */"
+    },
+    {
+        "class": "@lg",
+        "sass": "@include lg { ... }",
+        "screen": "lg",
+        "size" : "/* 960px */"
+    },
+    {
+        "class": "@xl",
+        "sass": "@include xl { ... }",
+        "screen": "xl",
+        "size" : "/* 1280px */"
+    },
+    {
+        "class": "@xxl",
+        "sass": "@include xxl { ... }",
+        "screen": "xxl",
+        "size" : "/* 1440px */"
+    }
+]

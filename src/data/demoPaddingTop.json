@@ -1,0 +1,238 @@
+[
+    {
+        "class": "pt-0",
+        "sass": "@include pt('0')",
+        "property": "padding-top: 0",
+        "px" : ""
+    },
+    {
+        "class": "pt-px",
+        "sass": "@include pt('px')",
+        "property": "padding-top: 1px",
+        "px" : ""
+    },
+    {
+        "class": "pt-2",
+        "sass": "@include pt('2')",
+        "property": "padding-top: 0.125rem",
+        "px" : "/* 2px */"
+    },
+    {
+        "class": "pt-4",
+        "sass": "@include pt('4')",
+        "property": "padding-top: 0.25rem",
+        "px" : "/* 4px */"
+    },
+    {
+        "class": "pt-6",
+        "sass": "@include pt('6')",
+        "property": "padding-top: 0.375rem",
+        "px" : "/* 6px */"
+    },
+    {
+        "class": "pt-8",
+        "sass": "@include pt('8')",
+        "property": "padding-top: 0.5rem",
+        "px" : "/* 8px */"
+    },
+    {
+        "class": "pt-10",
+        "sass": "@include pt('10')",
+        "property": "padding-top: 0.625rem",
+        "px" : "/* 10px */"
+    },
+    {
+        "class": "pt-12",
+        "sass": "@include pt('12')",
+        "property": "padding-top: 0.75rem",
+        "px" : "/* 12px */"
+    },
+    {
+        "class": "pt-14",
+        "sass": "@include pt('14')",
+        "property": "padding-top: 0.875rem",
+        "px" : "/* 14px */"
+    },
+    {
+        "class": "pt-16",
+        "sass": "@include pt('16')",
+        "property": "padding-top: 1rem",
+        "px" : "/* 16px */"
+    },
+    {
+        "class": "pt-18",
+        "sass": "@include pt('18')",
+        "property": "padding-top: 1.125rem",
+        "px" : "/* 18px */"
+    },
+    {
+        "class": "pt-20",
+        "sass": "@include pt('20')",
+        "property": "padding-top: 1.25rem",
+        "px" : "/* 20px */"
+    },
+    {
+        "class": "pt-24",
+        "sass": "@include pt('24')",
+        "property": "padding-top: 1.5rem",
+        "px" : "/* 24px */"
+    },
+    {
+        "class": "pt-28",
+        "sass": "@include pt('28')",
+        "property": "padding-top: 1.75rem",
+        "px" : "/* 28px */"
+    },
+    {
+        "class": "pt-30",
+        "sass": "@include pt('30')",
+        "property": "padding-top: 1.875rem",
+        "px" : "/* 30px */"
+    },
+    {
+        "class": "pt-32",
+        "sass": "@include pt('32')",
+        "property": "padding-top: 2rem",
+        "px" : "/* 32px */"
+    },
+    {
+        "class": "pt-34",
+        "sass": "@include pt('34')",
+        "property": "padding-top: 2.125rem",
+        "px" : "/* 34px */"
+    },
+    {
+        "class": "pt-36",
+        "sass": "@include pt('36')",
+        "property": "padding-top: 2.25rem",
+        "px" : "/* 36px */"
+    },
+    {
+        "class": "pt-40",
+        "sass": "@include pt('40')",
+        "property": "padding-top: 2.5rem",
+        "px" : "/* 40px */"
+    },
+    {
+        "class": "pt-44",
+        "sass": "@include pt('44')",
+        "property": "padding-top: 2.75rem",
+        "px" : "/* 44px */"
+    },
+    {
+        "class": "pt-xxs",
+        "sass": "@include pt('xxs')",
+        "property": "padding-top: 0.25rem",
+        "px" : "/* 4px */"
+    },
+    {
+        "class": "pt-xs",
+        "sass": "@include pt('xs')",
+        "property": "padding-top: 0.5rem",
+        "px" : "/* 8px */"
+    },
+    {
+        "class": "pt-sm",
+        "sass": "@include pt('sm')",
+        "property": "padding-top: 1rem",
+        "px" : "/* 16px */"
+    },
+    {
+        "class": "pt-md",
+        "sass": "@include pt('md')",
+        "property": "padding-top: 1.5rem",
+        "px" : "/* 24px */"
+    },
+    {
+        "class": "pt-lg",
+        "sass": "@include pt('lg')",
+        "property": "padding-top: 2rem",
+        "px" : "/* 32px */"
+    },
+    {
+        "class": "pt-xl",
+        "sass": "@include pt('xl')",
+        "property": "padding-top: 3rem",
+        "px" : "/* 48px */"
+    },
+    {
+        "class": "pt-2xl",
+        "sass": "@include pt('2xl')",
+        "property": "padding-top: 4rem",
+        "px" : "/* 64px */"
+    },
+    {
+        "class": "pt-3xl",
+        "sass": "@include pt('3xl')",
+        "property": "padding-top: 5rem",
+        "px" : "/* 80px */"
+    },
+    {
+        "class": "pt-4xl",
+        "sass": "@include pt('4xl')",
+        "property": "padding-top: 6rem",
+        "px" : "/* 96px */"
+    },
+    {
+        "class": "pt-5xl",
+        "sass": "@include pt('5xl')",
+        "property": "padding-top: 7rem",
+        "px" : "/* 112px */"
+    },
+    {
+        "class": "pt-6xl",
+        "sass": "@include pt('6xl')",
+        "property": "padding-top: 8rem",
+        "px" : "/* 128px */"
+    },
+    {
+        "class": "pt-7xl",
+        "sass": "@include pt('7xl')",
+        "property": "padding-top: 9rem",
+        "px" : "/* 144px */"
+    },
+    {
+        "class": "pt-8xl",
+        "sass": "@include pt('8xl')",
+        "property": "padding-top: 10rem",
+        "px" : "/* 160px */"
+    },
+    {
+        "class": "pt-9xl",
+        "sass": "@include pt('9xl')",
+        "property": "padding-top: 11rem",
+        "px" : "/* 176px */"
+    },
+    {
+        "class": "pt-10xl",
+        "sass": "@include pt('10xl')",
+        "property": "padding-top: 12rem",
+        "px" : "/* 192px */"
+    },
+    {
+        "class": "pt-vh",
+        "sass": "@include pt('vh')",
+        "property": "padding-top: 100vh",
+        "px" : ""
+    },
+    {
+        "class": "pt-vw",
+        "sass": "@include pt('vw')",
+        "property": "padding-top: 100vw",
+        "px" : ""
+    },
+    {
+        "class": "pt-full",
+        "sass": "@include pt('full')",
+        "property": "padding-top: 100%",
+        "px" : ""
+    },
+    {
+        "class": "pt-auto",
+        "sass": "@include pt('auto')",
+        "property": "padding-top: auto",
+        "px" : ""
+    }
+
+
+]

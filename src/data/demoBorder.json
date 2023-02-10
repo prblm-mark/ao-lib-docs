@@ -1,0 +1,33 @@
+[
+    {
+        "class": "border-0",
+        "sass": "@include border('0')",
+        "property": "border-width: 0",
+        "px" : ""
+    },
+    {
+        "class": "border-1",
+        "sass": "@include border('1')",
+        "property": "border-width: 1px",
+        "px" : ""
+    },
+    {
+        "class": "border-2",
+        "sass": "@include border('2')",
+        "property": "border-width: 2px",
+        "px" : ""
+    },
+    {
+        "class": "border-3",
+        "sass": "@include border('3')",
+        "property": "border-width: 3px",
+        "px" : ""
+    },
+    {
+        "class": "border-4",
+        "sass": "@include border('4')",
+        "property": "border-width: 4px",
+        "px" : ""
+    }
+
+]

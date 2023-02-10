@@ -1,0 +1,236 @@
+[
+    {
+        "class": "w-0",
+        "sass": "@include w('0')",
+        "property": "width: 0",
+        "px" : ""
+    },
+    {
+        "class": "w-px",
+        "sass": "@include w('px')",
+        "property": "width: 1px",
+        "px" : ""
+    },
+    {
+        "class": "w-2",
+        "sass": "@include w('2')",
+        "property": "width: 0.125rem",
+        "px" : "/* 2px */"
+    },
+    {
+        "class": "w-4",
+        "sass": "@include w('4')",
+        "property": "width: 0.25rem",
+        "px" : "/* 4px */"
+    },
+    {
+        "class": "w-6",
+        "sass": "@include w('6')",
+        "property": "width: 0.375rem",
+        "px" : "/* 6px */"
+    },
+    {
+        "class": "w-8",
+        "sass": "@include w('8')",
+        "property": "width: 0.5rem",
+        "px" : "/* 8px */"
+    },
+    {
+        "class": "w-10",
+        "sass": "@include w('10')",
+        "property": "width: 0.625rem",
+        "px" : "/* 10px */"
+    },
+    {
+        "class": "w-12",
+        "sass": "@include w('12')",
+        "property": "width: 0.75rem",
+        "px" : "/* 12px */"
+    },
+    {
+        "class": "w-14",
+        "sass": "@include w('14')",
+        "property": "width: 0.875rem",
+        "px" : "/* 14px */"
+    },
+    {
+        "class": "w-16",
+        "sass": "@include w('16')",
+        "property": "width: 1rem",
+        "px" : "/* 16px */"
+    },
+    {
+        "class": "w-18",
+        "sass": "@include w('18')",
+        "property": "width: 1.125rem",
+        "px" : "/* 18px */"
+    },
+    {
+        "class": "w-20",
+        "sass": "@include w('20')",
+        "property": "width: 1.25rem",
+        "px" : "/* 20px */"
+    },
+    {
+        "class": "w-24",
+        "sass": "@include w('24')",
+        "property": "width: 1.5rem",
+        "px" : "/* 24px */"
+    },
+    {
+        "class": "w-28",
+        "sass": "@include w('28')",
+        "property": "width: 1.75rem",
+        "px" : "/* 28px */"
+    },
+    {
+        "class": "w-30",
+        "sass": "@include w('30')",
+        "property": "width: 1.875rem",
+        "px" : "/* 30px */"
+    },
+    {
+        "class": "w-32",
+        "sass": "@include w('32')",
+        "property": "width: 2rem",
+        "px" : "/* 32px */"
+    },
+    {
+        "class": "w-34",
+        "sass": "@include w('34')",
+        "property": "width: 2.125rem",
+        "px" : "/* 34px */"
+    },
+    {
+        "class": "w-36",
+        "sass": "@include w('36')",
+        "property": "width: 2.25rem",
+        "px" : "/* 36px */"
+    },
+    {
+        "class": "w-40",
+        "sass": "@include w('40')",
+        "property": "width: 2.5rem",
+        "px" : "/* 40px */"
+    },
+    {
+        "class": "w-44",
+        "sass": "@include w('44')",
+        "property": "width: 2.75rem",
+        "px" : "/* 44px */"
+    },
+    {
+        "class": "w-xxs",
+        "sass": "@include w('xxs')",
+        "property": "width: 0.25rem",
+        "px" : "/* 4px */"
+    },
+    {
+        "class": "w-xs",
+        "sass": "@include w('xs')",
+        "property": "width: 0.5rem",
+        "px" : "/* 8px */"
+    },
+    {
+        "class": "w-sm",
+        "sass": "@include w('sm')",
+        "property": "width: 1rem",
+        "px" : "/* 16px */"
+    },
+    {
+        "class": "w-md",
+        "sass": "@include w('md')",
+        "property": "width: 1.5rem",
+        "px" : "/* 24px */"
+    },
+    {
+        "class": "w-lg",
+        "sass": "@include w('lg')",
+        "property": "width: 2rem",
+        "px" : "/* 32px */"
+    },
+    {
+        "class": "w-xl",
+        "sass": "@include w('xl')",
+        "property": "width: 3rem",
+        "px" : "/* 48px */"
+    },
+    {
+        "class": "w-2xl",
+        "sass": "@include w('2xl')",
+        "property": "width: 4rem",
+        "px" : "/* 64px */"
+    },
+    {
+        "class": "w-3xl",
+        "sass": "@include w('3xl')",
+        "property": "width: 5rem",
+        "px" : "/* 80px */"
+    },
+    {
+        "class": "w-4xl",
+        "sass": "@include w('4xl')",
+        "property": "width: 6rem",
+        "px" : "/* 96px */"
+    },
+    {
+        "class": "w-5xl",
+        "sass": "@include w('5xl')",
+        "property": "width: 7rem",
+        "px" : "/* 112px */"
+    },
+    {
+        "class": "w-6xl",
+        "sass": "@include w('6xl')",
+        "property": "width: 8rem",
+        "px" : "/* 128px */"
+    },
+    {
+        "class": "w-7xl",
+        "sass": "@include w('7xl')",
+        "property": "width: 9rem",
+        "px" : "/* 144px */"
+    },
+    {
+        "class": "w-8xl",
+        "sass": "@include w('8xl')",
+        "property": "width: 10rem",
+        "px" : "/* 160px */"
+    },
+    {
+        "class": "w-9xl",
+        "sass": "@include w('9xl')",
+        "property": "width: 11rem",
+        "px" : "/* 176px */"
+    },
+    {
+        "class": "w-10xl",
+        "sass": "@include w('10xl')",
+        "property": "width: 12rem",
+        "px" : "/* 192px */"
+    },
+    {
+        "class": "w-vh",
+        "sass": "@include w('vh')",
+        "property": "width: 100vh",
+        "px" : ""
+    },
+    {
+        "class": "w-vw",
+        "sass": "@include w('vw')",
+        "property": "width: 100vw",
+        "px" : ""
+    },
+    {
+        "class": "w-full",
+        "sass": "@include w('full')",
+        "property": "width: 100%",
+        "px" : ""
+    },
+    {
+        "class": "w-auto",
+        "sass": "@include w('auto')",
+        "property": "width: auto",
+        "px" : ""
+    }
+]

@@ -17,6 +17,9 @@ const showMenu = ref(false)
             <RouterLink to="/">Color Palette</RouterLink>
             <RouterLink to="/theme-colors">Theme Colors</RouterLink>
 
+            <h4>Breakpoints</h4>
+            <RouterLink to="/breakpoints">Screen sizes</RouterLink>
+
             <h4>Typography</h4>
             <RouterLink to="/typography"> Headings & Text </RouterLink>
             <RouterLink to="/font-sizes"> Font Sizes </RouterLink>
@@ -24,6 +27,17 @@ const showMenu = ref(false)
             <RouterLink to="/letter-spacing"> Letter Spacing </RouterLink>
             <RouterLink to="/line-height"> Line Height </RouterLink>
             <RouterLink to="/text-align"> Text Align </RouterLink>
+
+            <h4>Spacing</h4>
+            <RouterLink to="/margin">Margin</RouterLink>
+            <RouterLink to="/padding">Padding</RouterLink>
+            <RouterLink to="/width">Width</RouterLink>
+            <RouterLink to="/height">Height</RouterLink>
+
+            <h4>Utilities</h4>
+            <RouterLink to="/display">Display</RouterLink>
+            <RouterLink to="/borders">Borders</RouterLink>
+            <RouterLink to="/effects">Effects</RouterLink>
 
             <h4>Layout</h4>
             <RouterLink to="/grid">Grid</RouterLink>

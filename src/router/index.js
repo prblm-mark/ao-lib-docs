@@ -74,6 +74,46 @@ const router = createRouter({
             name: 'text-align',
             component: () => import('../views/TextAlignView.vue'),
         },
+        {
+            path: '/breakpoints',
+            name: 'breakpoints',
+            component: () => import('../views/BreakpointsView.vue'),
+        },
+        {
+            path: '/borders',
+            name: 'borders',
+            component: () => import('../views/BordersView.vue'),
+        },
+        {
+            path: '/display',
+            name: 'display',
+            component: () => import('../views/DisplayView.vue'),
+        },
+        {
+            path: '/effects',
+            name: 'effects',
+            component: () => import('../views/EffectsView.vue'),
+        },
+        {
+            path: '/margin',
+            name: 'margin',
+            component: () => import('../views/MarginView.vue'),
+        },
+        {
+            path: '/padding',
+            name: 'padding',
+            component: () => import('../views/PaddingView.vue'),
+        },
+        {
+            path: '/width',
+            name: 'width',
+            component: () => import('../views/WidthView.vue'),
+        },
+        {
+            path: '/height',
+            name: 'height',
+            component: () => import('../views/HeightView.vue'),
+        },
     ],
 })
 

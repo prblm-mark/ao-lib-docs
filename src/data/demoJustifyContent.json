@@ -1,0 +1,38 @@
+[
+    {
+        "class": "justify-start",
+        "sass": "@include justify('start')",
+        "property": "justify-content: flex-start",
+        "px" : ""
+    },
+    {
+        "class": "justify-end",
+        "sass": "@include justify('end')",
+        "property": "justify-content: flex-end",
+        "px" : ""
+    },
+    {
+        "class": "justify-center",
+        "sass": "@include justify('center')",
+        "property": "justify-content: center",
+        "px" : ""
+    },
+    {
+        "class": "justify-between",
+        "sass": "@include justify('between')",
+        "property": "justify-content: between",
+        "px" : ""
+    },
+    {
+        "class": "justify-around",
+        "sass": "@include justify('around')",
+        "property": "justify-content: around",
+        "px" : ""
+    },
+    {
+        "class": "justify-evenly",
+        "sass": "@include justify('evenly')",
+        "property": "justify-content: evenly",
+        "px" : ""
+    }
+]

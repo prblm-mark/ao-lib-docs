@@ -1,0 +1,33 @@
+[
+    {
+        "class": "border-l-0",
+        "sass": "@include border-l('0')",
+        "property": "border-left-width: 0",
+        "px" : ""
+    },
+    {
+        "class": "border-l-1",
+        "sass": "@include border-l('1')",
+        "property": "border-left-width: 1px",
+        "px" : ""
+    },
+    {
+        "class": "border-l-2",
+        "sass": "@include border-l('2')",
+        "property": "border-left-width: 2px",
+        "px" : ""
+    },
+    {
+        "class": "border-l-3",
+        "sass": "@include border-l('3')",
+        "property": "border-left-width: 3px",
+        "px" : ""
+    },
+    {
+        "class": "border-l-4",
+        "sass": "@include border-l('4')",
+        "property": "border-left-width: 4px",
+        "px" : ""
+    }
+
+]

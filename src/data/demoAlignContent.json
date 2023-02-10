@@ -1,0 +1,32 @@
+[
+    {
+        "class": "content-start",
+        "sass": "@include content('start')",
+        "property": "align-content: flex-start",
+        "px" : ""
+    },
+    {
+        "class": "content-end",
+        "sass": "@include content('end')",
+        "property": "align-content: flex-end",
+        "px" : ""
+    },
+    {
+        "class": "content-center",
+        "sass": "@include content('center')",
+        "property": "align-content: center",
+        "px" : ""
+    },
+    {
+        "class": "content-baseline",
+        "sass": "@include content('baseline')",
+        "property": "align-content: baseline",
+        "px" : ""
+    },
+    {
+        "class": "content-stretch",
+        "sass": "@include content('stretch')",
+        "property": "align-content: stretch",
+        "px" : ""
+    }
+]

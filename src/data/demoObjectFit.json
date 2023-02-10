@@ -1,0 +1,32 @@
+[
+    {
+        "class": "object-contain",
+        "sass": "@include object('contain')",
+        "property": "object-fit: contain",
+        "px" : ""
+    },
+    {
+        "class": "object-cover",
+        "sass": "@include object('cover')",
+        "property": "object-fit: cover",
+        "px" : ""
+    },
+    {
+        "class": "object-fill",
+        "sass": "@include object('fill')",
+        "property": "object-fit: fill",
+        "px" : ""
+    },
+    {
+        "class": "object-none",
+        "sass": "@include object('none')",
+        "property": "object-fit: none",
+        "px" : ""
+    },
+    {
+        "class": "object-scale-down",
+        "sass": "@include object('scale-down')",
+        "property": "object-fit: scale-down",
+        "px" : ""
+    }
+]

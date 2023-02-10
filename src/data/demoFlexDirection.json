@@ -1,0 +1,26 @@
+[
+    {
+        "class": "flex-row",
+        "sass": "@include flex('row')",
+        "property": "flex-direction: row",
+        "px" : ""
+    },
+    {
+        "class": "flex-row-reverse",
+        "sass": "@include flex('row-reverse')",
+        "property": "flex-direction: row-reverse",
+        "px" : ""
+    },
+    {
+        "class": "flex-col",
+        "sass": "@include flex('col')",
+        "property": "flex-direction: col",
+        "px" : ""
+    },
+    {
+        "class": "flex-col-reverse",
+        "sass": "@include flex('col-reverse')",
+        "property": "flex-direction: column-reverse",
+        "px" : ""
+    }
+]
